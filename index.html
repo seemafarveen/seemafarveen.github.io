@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cheranadu Unavagam</title>
+
+    <!-- CONNECT CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- POPUP STYLE -->
+    <style>
+
+        .menu-popup {
+            display: none;
+
+            position: fixed;
+            z-index: 9999;
+
+            left: 0;
+            top: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.65);
+
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        .menu-popup.show {
+            display: flex;
+        }
+
+        .menu-popup-content {
+
+            position: relative;
+
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+
+            overflow-y: auto;
+
+            background: #fff8e9;
+
+            padding: 35px;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.35);
+
+            animation: popupOpen 0.3s ease;
+        }
+
+        @keyframes popupOpen {
+
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+        }
+
+        .menu-popup-content h2 {
+
+            margin-top: 5px;
+            margin-bottom: 25px;
+
+            color: #4a2b20;
+
+            text-align: center;
+
+            font-size: 35px;
+        }
+
+        .close-button {
+
+            position: absolute;
+
+            top: 12px;
+            right: 15px;
+
+            width: 40px;
+            height: 40px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: #4a2b20;
+            color: white;
+
+            font-size: 25px;
+
+            cursor: pointer;
+
+            line-height: 40px;
+        }
+
+        .close-button:hover {
+            background: #d79a2b;
+        }
+
+        .menu-item {
+
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 20px;
+
+            background: #fffaf0;
+
+            padding: 15px 18px;
+
+            margin: 10px 0;
+
+            border-radius: 12px;
+
+            border: 1px solid #e4c98e;
+
+            color: #4a2b20;
+
+            font-size: 17px;
+        }
+
+        .menu-item strong {
+
+            color: #d79a2b;
+
+            white-space: nowrap;
+
+            font-size: 18px;
+        }
+
+        @media (max-width: 700px) {
+
+            .menu-popup-content {
+                width: 95%;
+                padding: 30px 18px;
+            }
+
+            .menu-popup-content h2 {
+                font-size: 28px;
+            }
+
+            .menu-item {
+                font-size: 15px;
+                padding: 13px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<!-- =========================================
+     CUSTOMER REVIEWS
+========================================= -->
+
+<section class="customer-reviews">
+
+    <h2>What Our Customers Say</h2>
+
+    <p class="review-intro">
+        A taste of Cheranadu, loved by our customers.
+    </p>
+
+    <div class="review-cards">
+
+        <div class="customer-review">
+            <div class="stars">★★★★★</div>
+            <h3>Delicious & Authentic!</h3>
+            <p>
+                "The biriyani was amazing and full of traditional flavours.
+                It truly felt like an authentic Chera-style meal."
+            </p>
+            <span>— Happy Customer</span>
+        </div>
+
+        <div class="customer-review">
+            <div class="stars">★★★★★</div>
+            <h3>Excellent Food</h3>
+            <p>
+                "Loved the chicken specials and the traditional taste.
+                Everything was fresh and beautifully prepared."
+            </p>
+            <span>— Happy Customer</span>
+        </div>
+
+        <div class="customer-review">
+            <div class="stars">★★★★★</div>
+            <h3>Wonderful Experience</h3>
+            <p>
+                "The food, atmosphere and traditional flavours made
+                our visit really special."
+            </p>
+            <span>— Happy Customer</span>
+        </div>
+
+    </div>
+
+</section>
+<body>
+<!-- =========================================
+     FLOATING FOOD IMAGES
+========================================= -->
+
+<div class="floating-foods">
+
+    <img
+        src="biriyani1.png"
+        class="food food-biryani"
+        alt="Biryani"
+    >
+
+    <img
+        src="chicken kebab.png"
+        class="food food-chicken"
+        alt="Chicken Kebab"
+    >
+
+    <img
+        src="dosa.png"
+        class="food food-dosa"
+        alt="Dosa"
+    >
+
+    <img
+        src="naan.webp"
+        class="food food-naan"
+        alt="Naan"
+    >
+
+</div>
+
+
+<!-- ================================= -->
+<!-- HERO SECTION -->
+<!-- ================================= -->
+
+<header class="hero">
+
+    <div class="logo-area">
+
+        <div class="brand-name">
+
+            <span>CHERANAD</span>
+
+            <img
+                src="cheranadu-bow-icon.png"
+                class="u-bow-logo"
+                alt="Cheranadu logo"
+            >
+
+        </div>
+
+        <div class="shoot-arrow"></div>
+
+        <h2>UNAVAGAM</h2>
+
+    </div>
+
+    <p>
+        A taste rooted in heritage.
+    </p>
+
+    <!-- EXPLORE MENU BUTTON -->
+
+    <a href="#menu" class="explore-menu-button">
+        Explore Menu
+    </a>
+
+</header>
+
+
+
+<!-- ================================= -->
+<!-- HISTORY SECTION -->
+<!-- ================================= -->
+
+<section id="history">
+
+    <h2>The Chera Kingdom</h2>
+
+    <p>
+        The Cheras were one of the major dynastic traditions
+        of ancient Tamilnadu, alongside the Cholas and Pandyas.
+    </p>
+
+    <p>
+        Their history is connected with literature, trade,
+        inscriptions and the cultural heritage of South India.
+    </p>
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- MENU CATEGORIES -->
+<!-- ================================= -->
+
+<section id="menu">
+
+    <h2>Must Try</h2>
+
+    <div class="cards">
+
+
+        <!-- BIRYANI -->
+
+        <div
+            class="menu-card"
+            onclick="openMenu('biryani')"
+        >
+
+            <h3>🍚 Biryani</h3>
+
+            <p>
+                Explore our complete Biryani menu
+            </p>
+
+        </div>
+
+
+
+        <!-- CHICKEN -->
+
+        <div
+            class="menu-card"
+            onclick="openMenu('chicken')"
+        >
+
+            <h3>🍗 Chicken Specials</h3>
+
+            <p>
+                Explore our Chicken specialities
+            </p>
+
+        </div>
+
+
+
+        <!-- MUTTON -->
+
+        <div
+            class="menu-card"
+            onclick="openMenu('mutton')"
+        >
+
+            <h3>🥘 Mutton Specials</h3>
+
+            <p>
+                Explore our Mutton specialities
+            </p>
+
+        </div>
+
+
+
+        <!-- VEG -->
+
+        <div
+            class="menu-card"
+            onclick="openMenu('veg')"
+        >
+
+            <h3>🌱 Veg Specials</h3>
+
+            <p>
+                Explore our complete vegetarian menu
+            </p>
+
+        </div>
+
+
+
+        <!-- TODAY'S MENU -->
+
+        <div
+            class="menu-card"
+            onclick="openMenu('today')"
+        >
+
+            <h3>⭐ Today's Menu</h3>
+
+            <p>
+                Explore today's special menu
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- RESTAURANT FEATURES -->
+<!-- ================================= -->
+
+<section id="features">
+
+    <h2>Our Food Promise</h2>
+
+    <div class="cards">
+
+
+        <div>
+
+            <h3>🌿 No Preservatives</h3>
+
+            <p>
+                Freshly prepared food without added preservatives.
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <h3>🥘 No Ajinomoto</h3>
+
+            <p>
+                Prepared without Ajinomoto.
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <h3>🍗 Daily Fresh Meat</h3>
+
+            <p>
+                Fresh meat prepared for the day's cooking.
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <h3>☪️ 100% Halal</h3>
+
+            <p>
+                Halal food prepared according to halal requirements.
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <h3>💧 RO Water</h3>
+
+            <p>
+                RO-purified water is used in our kitchen.
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <h3>🌱 Cold-Pressed Oil</h3>
+
+            <p>
+                Cooking with cold-pressed oil.
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <h3>🎨 No Artificial Colours</h3>
+
+            <p>
+                Prepared without artificial food colours.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- MENU POPUP -->
+<!-- ================================= -->
+
+<div
+    id="menuPopup"
+    class="menu-popup"
+>
+
+    <div class="menu-popup-content">
+
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            class="close-button"
+            onclick="closeMenu()"
+        >
+            ×
+        </button>
+
+
+        <!-- MENU TITLE -->
+
+        <h2 id="menuTitle">
+            Menu
+        </h2>
+
+
+        <!-- MENU ITEMS -->
+
+        <div id="menuItems"></div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ================================= -->
+<!-- JAVASCRIPT -->
+<!-- ================================= -->
+
+<script>
+
+function openMenu(category) {
+
+    const popup =
+        document.getElementById("menuPopup");
+
+    const title =
+        document.getElementById("menuTitle");
+
+    const items =
+        document.getElementById("menuItems");
+
+
+    /* =================================
+       BIRYANI
+       ================================= */
+
+    if (category === "biryani") {
+
+        title.innerHTML = "🍚 Biryani";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Mutton Biryani</span>
+                <strong>₹319</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Chicken Biryani</span>
+                <strong>₹179</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Egg Dum Biryani</span>
+                <strong>₹149</strong>
+            </div>
+
+        `;
+
+    }
+
+
+    /* =================================
+       CHICKEN SPECIALS
+       ================================= */
+
+    else if (category === "chicken") {
+
+        title.innerHTML = "🍗 Chicken Specials";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Chicken 65 Boneless</span>
+                <strong>₹180</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Chicken Hot Pepper</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Chicken Manchurian</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Chicken Maharani</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Japan Chicken</span>
+                <strong>₹280</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Kongu Varuval (Nattu Kozhi)</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Cheranadu Chicken (Nattu Kozhi)</span>
+                <strong>₹220</strong>
+            </div>
+
+        `;
+
+    }
+
+
+    /* =================================
+       MUTTON SPECIALS
+       ================================= */
+
+    else if (category === "mutton") {
+
+        title.innerHTML = "🥘 Mutton Specials";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Mutton Sukka</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Cheranadu Mutton</span>
+                <strong>₹220</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Mutton Kola Urundai (1 Pc)</span>
+                <strong>₹70</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Mutton Kola Urundai (3 Pcs)</span>
+                <strong>₹210</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Mutton Kari Dosa</span>
+                <strong>₹260</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Mutton Kothu</span>
+                <strong>₹280</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Mutton Lappa</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Leaf Mutton Parotta</span>
+                <strong>₹280</strong>
+            </div>
+
+        `;
+
+    }
+
+
+    /* =================================
+       VEG SPECIALS
+       ================================= */
+
+    else if (category === "veg") {
+
+        title.innerHTML = "🌱 Veg Specials";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Standard Meals - Veg</span>
+                <strong>₹100</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Special Meals - Veg</span>
+                <strong>₹159</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Gobi 65</span>
+                <strong>₹120</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Gobi Hot Pepper</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Gobi Manchurian</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Gobi Maharani</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Mushroom 65</span>
+                <strong>₹160</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Mushroom Hot Pepper</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Mushroom Manchurian</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Mushroom Maharani</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Japan Mushroom</span>
+                <strong>₹280</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Paneer 65</span>
+                <strong>₹200</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Paneer Hot Pepper</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Paneer Maharani</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Paneer Manchurian</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Veg Kothu</span>
+                <strong>₹110</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Veg Fried Rice / Noodles</span>
+                <strong>₹100</strong>
+            </div>
+
+        `;
+
+    }
+
+
+    /* =================================
+       TODAY'S MENU
+       ================================= */
+
+    else if (category === "today") {
+
+        title.innerHTML = "⭐ Today's Menu";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Nallampatti Chicken Rice</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Ghee Podi Kozhli</span>
+                <strong>₹260</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Satti Soru</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Cheranadu Chicken Gravy</span>
+                <strong>₹220</strong>
+            </div>
+
+        `;
+
+    }
+
+
+    /* SHOW POPUP */
+
+    popup.classList.add("show");
+
+}
+
+
+/* =================================
+   CLOSE POPUP
+   ================================= */
+
+function closeMenu() {
+
+    const popup =
+        document.getElementById("menuPopup");
+
+    popup.classList.remove("show");
+
+}
+
+
+/* =================================
+   CLICK OUTSIDE POPUP TO CLOSE
+   ================================= */
+
+document
+    .getElementById("menuPopup")
+    .addEventListener("click", function(event) {
+
+        if (event.target === this) {
+
+            closeMenu();
+
+        }
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
