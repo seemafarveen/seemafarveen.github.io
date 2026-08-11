@@ -280,7 +280,7 @@ SHOOTING ARROW
     z-index: 10;
 
     animation:
-        arrowShoot 1.5s ease-out 1.9s forwards;
+        arrowShoot 1.5s ease-out 1.9s infinite;
 }
 
 
