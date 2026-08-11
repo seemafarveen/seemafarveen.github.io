@@ -446,7 +446,7 @@ CARDS
     border: 1px solid #e4c98e;
 
     box-shadow:
-        0 8px 25px
+        06px 20px
         rgba(80, 40, 25, 0.08);
 
     transition:
@@ -1062,8 +1062,6 @@ MOBILE
 
     font-weight: bold;
 }
-
-
 /* =========================================
    REVIEWS - MOBILE
 ========================================= */
@@ -1082,6 +1080,79 @@ MOBILE
         grid-template-columns: 1fr;
     }
 
+}/* =========================
+   CUSTOMER REVIEWS - LAST SECTION
+   ========================= */
+
+.reviews {
+    position: relative !important;
+    display: block !important;
+    width: 100%;
+    min-height: 500px;
+    margin-top: 100px;
+    padding: 80px 5%;
+    box-sizing: border-box;
+    clear: both;
+    z-index: 1;
 }
 
+/* Do not allow review images to float over other sections */
+.reviews img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Review heading */
+.reviews h2 {
+    position: relative;
+    z-index: 2;
+}
+
+/* Review cards */
+.review-card {
+    position: relative !important;
+    z-index: 2;
+}
+
+}/* =========================
+   INSTAGRAM SECTION
+   ========================= */
+
+.instagram-section {
+    width: 100%;
+    padding: 80px 20px;
+    text-align: center;
+    background: #f8f0df;
+    box-sizing: border-box;
+    position: relative;
+    clear: both;
+}
+
+.instagram-section h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #542b1f;
+}
+
+.instagram-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #542b1f;
+}
+
+.instagram-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #542b1f;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.instagram-button:hover {
+    transform: scale(1.05);
+    background: #7a4030;
 }
