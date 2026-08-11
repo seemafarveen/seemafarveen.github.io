@@ -1,0 +1,1087 @@
+/* =========================================
+CHERANADU UNAVAGAM
+COMPLETE WARM THEME
+========================================= */
+
+
+/* =========================================
+BASIC PAGE
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    background: #fff8e9;
+
+    color: #4a2b20;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+HERO
+========================================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+    padding: 50px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #f5d99b 0%,
+            #fff8e9 55%,
+            #f3d49a 100%
+        );
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+LOGO AREA
+========================================= */
+
+.logo-area {
+    position: relative;
+
+    display: inline-block;
+
+    text-align: center;
+
+    animation:
+        logoPop 1.8s
+        cubic-bezier(0.2, 0.8, 0.2, 1)
+        forwards;
+}
+
+
+/* =========================================
+BRAND NAME
+========================================= */
+
+.brand-name {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    position: relative;
+
+    white-space: nowrap;
+}
+
+
+.brand-name span {
+    display: inline-block;
+
+    color: #d79a2b;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 70px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    line-height: 0.9;
+}
+
+
+/* =========================================
+U + BOW LOGO
+========================================= */
+
+.u-bow-logo {
+    display: block;
+
+    width: 290px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    margin-left: -110px;
+
+    margin-bottom: -20px;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+/* =========================================
+UNAVAGAM
+========================================= */
+
+.logo-area h2 {
+    margin: 10px 0 0;
+
+    color: #4a2b20;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+TAGLINE
+========================================= */
+
+.hero p {
+    font-size: 20px;
+
+    margin-top: 28px;
+
+    margin-bottom: 25px;
+
+    color: #4a2b20;
+}
+
+
+/* =========================================
+EXPLORE MENU BUTTON
+========================================= */
+
+.explore-menu-button {
+
+    display: inline-block;
+
+    background: #4a2b20;
+
+    color: white;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.explore-menu-button:hover {
+
+    background: #6b3d2b;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(80, 40, 25, 0.25);
+}
+
+
+/* =========================================
+LOGO ANIMATION
+========================================= */
+
+@keyframes logoPop {
+
+    0% {
+        transform:
+            translateY(400px)
+            scale(0.35);
+
+        opacity: 0;
+    }
+
+    55% {
+        transform:
+            translateY(-25px)
+            scale(1.08);
+
+        opacity: 1;
+    }
+
+    75% {
+        transform:
+            translateY(5px)
+            scale(0.98);
+
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translateY(0)
+            scale(1);
+
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================
+SHOOTING ARROW
+========================================= */
+
+.shoot-arrow {
+
+    position: absolute;
+
+    width: 5px;
+
+    height: 110px;
+
+    background: #d79a2b;
+
+    left: 77%;
+
+    top: 40%;
+
+    transform: translateX(-50%);
+
+    opacity: 0;
+
+    z-index: 10;
+
+    animation:
+        arrowShoot 1.5s ease-out 1.9s forwards;
+}
+
+
+.shoot-arrow::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -18px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 0;
+
+    height: 0;
+
+    border-left: 8px solid transparent;
+
+    border-right: 8px solid transparent;
+
+    border-bottom: 18px solid #d79a2b;
+}
+
+
+@keyframes arrowShoot {
+
+    0% {
+        transform: translate(-100%, 0);
+
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -350px);
+
+        opacity: 0;
+    }
+
+}
+
+
+/* =========================================
+ALL MAIN SECTIONS
+========================================= */
+
+section {
+
+    padding: 90px 7%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    background: transparent;
+}
+
+
+/* =========================================
+SECTION HEADINGS
+========================================= */
+
+section h2 {
+
+    color: #4a2b20;
+
+    font-size: 42px;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+section p {
+
+    line-height: 1.8;
+
+    font-size: 18px;
+
+    color: #4a2b20;
+}
+
+
+/* =========================================
+HISTORY
+========================================= */
+
+#history {
+
+    background:
+        radial-gradient(
+            circle at center,
+            #fff4d5,
+            #fff8e9
+        );
+}
+
+
+/* =========================================
+MENU SECTION
+========================================= */
+
+#menu {
+
+    background:
+        radial-gradient(
+            circle at center,
+            #f5d99b 0%,
+            #fff8e9 70%
+        );
+}
+
+
+/* =========================================
+FEATURES SECTION
+========================================= */
+
+#features {
+
+    background:
+        radial-gradient(
+            circle at center,
+            #fff4d5,
+            #fff8e9
+        );
+}
+
+
+/* =========================================
+CARDS
+========================================= */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 40px;
+
+    position: relative;
+
+    z-index: 6;
+}
+
+
+.cards > div {
+
+    background: #fffaf0;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    border: 1px solid #e4c98e;
+
+    box-shadow:
+        0 8px 25px
+        rgba(80, 40, 25, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+    position: relative;
+
+    z-index: 6;
+}
+
+
+.cards > div:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 14px 30px
+        rgba(80, 40, 25, 0.14);
+}
+
+
+.cards h3 {
+
+    color: #4a2b20;
+
+    font-size: 22px;
+}
+
+
+/* =========================================
+MENU CARDS
+========================================= */
+
+.menu-card {
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fffaf0,
+            #fdf0cf
+        );
+}
+
+
+/* =========================================
+MENU POPUP
+========================================= */
+
+.menu-popup {
+
+    display: none;
+
+    position: fixed;
+
+    z-index: 9999;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        rgba(74, 43, 32, 0.65);
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.menu-popup.show {
+
+    display: flex;
+}
+
+
+.menu-popup-content {
+
+    position: relative;
+
+    width: 90%;
+
+    max-width: 600px;
+
+    max-height: 80vh;
+
+    overflow-y: auto;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #f5d99b,
+            #fff8e9 65%
+        );
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    border: 2px solid #d79a2b;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.35);
+
+    animation:
+        popupOpen 0.3s ease;
+}
+
+
+@keyframes popupOpen {
+
+    from {
+
+        transform: scale(0.8);
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        transform: scale(1);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+.menu-popup-content h2 {
+
+    margin-top: 5px;
+
+    margin-bottom: 25px;
+
+    color: #4a2b20;
+
+    text-align: center;
+
+    font-size: 35px;
+}
+
+
+/* =========================================
+CLOSE BUTTON
+========================================= */
+
+.close-button {
+
+    position: absolute;
+
+    top: 12px;
+
+    right: 15px;
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #4a2b20;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    line-height: 40px;
+}
+
+
+.close-button:hover {
+
+    background: #d79a2b;
+}
+
+
+/* =========================================
+MENU ITEMS
+========================================= */
+
+.menu-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: #fffaf0;
+
+    padding: 15px 18px;
+
+    margin: 10px 0;
+
+    border-radius: 12px;
+
+    border: 1px solid #e4c98e;
+
+    color: #4a2b20;
+
+    font-size: 17px;
+}
+
+
+.menu-item strong {
+
+    color: #d79a2b;
+
+    white-space: nowrap;
+
+    font-size: 18px;
+}
+
+
+/* =========================================
+REVIEW
+========================================= */
+
+.review {
+
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background: #fffaf0;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    border: 1px solid #e4c98e;
+
+    box-shadow:
+        0 8px 25px
+        rgba(80, 40, 25, 0.08);
+}
+
+
+.review h3 {
+
+    color: #d79a2b;
+
+    font-size: 25px;
+
+    letter-spacing: 5px;
+}
+
+
+/* =====================================================
+   FOOD PNG IMAGES
+===================================================== */
+
+.floating-foods {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    pointer-events: none;
+
+    /*
+       IMPORTANT:
+       Food is above the page background,
+       but cards have a higher z-index.
+    */
+    z-index: 5;
+
+    overflow: hidden;
+}
+
+
+/* ALL FOOD IMAGES */
+
+.floating-foods .food {
+
+    position: absolute;
+
+    height: auto;
+
+    object-fit: contain;
+
+    pointer-events: none;
+
+    filter:
+        drop-shadow(
+            0 12px 15px
+            rgba(74, 43, 32, 0.20)
+        );
+
+    animation:
+        foodFloat 5s ease-in-out infinite;
+}
+
+
+/* =========================================
+BIRYANI - LEFT
+========================================= */
+
+.food-biryani {
+
+    width: 230px;
+
+    left: -60px;
+
+    top: 18%;
+
+    animation-delay: 0s;
+}
+
+
+/* =========================================
+CHICKEN - RIGHT
+========================================= */
+
+.food-chicken {
+
+    width: 230px;
+
+    right: -30px;
+
+    top: 20%;
+
+    animation-delay: 1s;
+}
+
+
+/* =========================================
+DOSA - LEFT
+========================================= */
+
+.food-dosa {
+
+    width: 230px;
+
+    left: -55px;
+
+    top: 64%;
+
+    animation-delay: 2s;
+}
+
+
+/* =========================================
+NAAN - RIGHT
+========================================= */
+
+.food-naan {
+
+    width: 300px;
+
+    right: -40px;
+
+    top: 50%;
+
+    animation-delay: 1.5s;
+}
+
+
+/* =========================================
+FOOD FLOATING ANIMATION
+========================================= */
+
+@keyframes foodFloat {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(-2deg);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-12px)
+            rotate(2deg);
+
+    }
+
+    100% {
+
+        transform:
+            translateY(0)
+            rotate(-2deg);
+
+    }
+
+}
+
+
+/* =========================================
+MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .brand-name span {
+
+        font-size: 45px;
+
+    }
+
+
+    .u-bow-logo {
+
+        width: 100px;
+
+        margin-left: -2px;
+
+    }
+
+
+    .logo-area h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .hero {
+
+        padding: 40px 15px;
+
+    }
+
+
+    .hero p {
+
+        font-size: 18px;
+
+    }
+
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    section {
+
+        padding: 70px 20px;
+
+    }
+
+
+    section h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .menu-popup-content {
+
+        width: 95%;
+
+        padding: 30px 18px;
+
+    }
+
+
+    .menu-popup-content h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .menu-item {
+
+        font-size: 15px;
+
+        padding: 13px;
+
+    }
+
+
+    /* Hide decorative food on small screens */
+
+    .floating-foods {
+
+        display: none;
+
+    }/* =========================================
+   CUSTOMER REVIEWS
+========================================= */
+
+.customer-reviews {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #f5d99b 0%,
+            #fff8e9 65%,
+            #f3d49a 100%
+        );
+}
+
+.customer-reviews h2 {
+    color: #4a2b20;
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+.review-intro {
+    font-size: 18px;
+
+    margin-bottom: 40px;
+
+    color: #4f2b20;
+}
+
+.review-cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.customer-review {
+    background: #fffaf0;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid #e4c98e;
+
+    box-shadow:
+        0 8px 25px
+        rgba(80, 40, 25, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.customer-review:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 14px 30px
+        rgba(80, 40, 25, 0.15);
+}
+
+.customer-review .stars {
+    color: #d79a2b;
+
+    font-size: 24px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+.customer-review h3 {
+    color: #4a2b20;
+
+    font-size: 23px;
+
+    margin: 10px 0 15px;
+}
+
+.customer-review p {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #4f2b20;
+}
+
+.customer-review span {
+    display: block;
+
+    margin-top: 18px;
+
+    color: #d79a2b;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   REVIEWS - MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .customer-reviews {
+        padding: 70px 20px;
+    }
+
+    .customer-reviews h2 {
+        font-size: 34px;
+    }
+
+    .review-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+}
