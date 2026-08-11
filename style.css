@@ -1141,18 +1141,451 @@ MOBILE
     color: #542b1f;
 }
 
-.instagram-button {
-    display: inline-block;
+
+..instagram-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
     padding: 15px 30px;
     background: #542b1f;
     color: white;
     text-decoration: none;
     border-radius: 30px;
     font-size: 18px;
-    transition: 0.3s;
+}
+
+.instagram-button img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }
 
 .instagram-button:hover {
     transform: scale(1.05);
     background: #7a4030;
+}
+.instagram-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 30px;
+    background: #542b1f;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.instagram-button i {
+    font-size: 28px;
+}/* =====================================================
+   ELEGANT MUST TRY SECTION
+===================================================== */
+
+.must-try {
+    position: relative;
+    width: 100%;
+    padding: 80px 5% 90px;
+    background: #fff8e9;
+    overflow: hidden;
+}
+
+
+/* Section title */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.section-title h2 {
+    margin: 0;
+    color: #4b2c20;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+
+/* Gold decorative line */
+
+.title-line {
+    width: 70px;
+    height: 1px;
+    background: #d49a29;
+    margin: 14px auto 0;
+    position: relative;
+}
+
+.title-line span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #fff8e9;
+    padding: 0 8px;
+
+    color: #d49a29;
+    font-size: 10px;
+}
+
+
+/* Five food items */
+
+.must-try-items {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+/* Individual food */
+
+.must-item {
+    text-align: center;
+    padding: 0 25px;
+
+    border-right: 1px solid #e5d5b7;
+
+    position: relative;
+
+    transition: transform 0.3s ease;
+}
+
+.must-item:last-child {
+    border-right: none;
+}
+
+
+/* Food image circle */
+
+.food-circle {
+    width: 155px;
+    height: 155px;
+
+    margin: 0 auto 25px;
+
+    padding: 6px;
+
+    border: 1px solid #d49a29;
+    border-radius: 50%;
+
+    position: relative;
+
+    transition: all 0.4s ease;
+}
+
+
+/* Second decorative circle */
+
+.food-circle::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -10px;
+
+    border: 1px solid #e7d4ad;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* Image */
+
+.food-circle img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* Hover */
+
+.must-item:hover {
+    transform: translateY(-8px);
+}
+
+.must-item:hover .food-circle {
+    transform: scale(1.05);
+}
+
+
+/* Dish name */
+
+.must-item h3 {
+    margin: 0;
+
+    color: #4b2c20;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+/* Description */
+
+.must-item p {
+    margin-top: 10px;
+
+    color: #5e4639;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+
+/* Small gold decoration */
+
+.gold-diamond {
+    display: block;
+
+    margin-top: 14px;
+
+    color: #d49a29;
+
+    font-size: 8px;
+}
+
+
+/* =====================================================
+   OUR FOOD PROMISE
+===================================================== */
+
+.food-promise {
+    width: 100%;
+
+    position: relative;
+
+    padding: 80px 7% 90px;
+
+    background: #fffdf7;
+
+    border-top: 1px solid #ead9b9;
+    border-bottom: 1px solid #ead9b9;
+
+    overflow: hidden;
+}
+
+
+/* Promise title */
+
+.food-promise .section-title {
+    margin-bottom: 35px;
+}
+
+.food-promise .title-line span {
+    background: #fffdf7;
+}
+
+
+/* Promise layout */
+
+.promise-list {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* Promise item */
+
+.promise-item {
+    min-height: 150px;
+
+    padding: 30px 35px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #ead9b9;
+}
+
+
+/* Vertical borders */
+
+.promise-item:not(:nth-child(3n + 1)) {
+    border-left: 1px solid #ead9b9;
+}
+
+
+/* Last item centered */
+
+.promise-center {
+    grid-column: 2;
+}
+
+
+/* Icon */
+
+.promise-icon {
+    flex-shrink: 0;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #a96d13;
+
+    font-size: 30px;
+}
+
+
+/* Promise heading */
+
+.promise-item h3 {
+    margin: 0 0 8px;
+
+    color: #4b2c20;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* Promise description */
+
+.promise-item p {
+    margin: 0;
+
+    color: #5e4639;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .must-try-items {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 50px;
+    }
+
+    .must-item:nth-child(3) {
+        border-right: none;
+    }
+
+    .promise-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .promise-item:not(:nth-child(3n + 1)) {
+        border-left: none;
+    }
+
+    .promise-item:nth-child(even) {
+        border-left: 1px solid #ead9b9;
+    }
+
+    .promise-center {
+        grid-column: auto;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .must-try {
+        padding: 60px 15px 70px;
+    }
+
+    .section-title h2 {
+        font-size: 38px;
+    }
+
+    .must-try-items {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+    }
+
+    .must-item {
+        padding: 0 10px;
+        border-right: none;
+    }
+
+    .food-circle {
+        width: 125px;
+        height: 125px;
+    }
+
+    .must-item h3 {
+        font-size: 20px;
+    }
+
+    .must-item p {
+        font-size: 15px;
+    }
+
+
+    /* Food promise */
+
+    .food-promise {
+        padding: 60px 20px 70px;
+    }
+
+    .promise-list {
+        grid-template-columns: 1fr;
+    }
+
+    .promise-item {
+        min-height: auto;
+
+        padding: 25px 10px;
+
+        border-left: none !important;
+    }
+
+    .promise-center {
+        grid-column: auto;
+    }
+
+    .promise-item h3 {
+        font-size: 21px;
+    }
+
+    .promise-item p {
+        font-size: 16px;
+    }
 }
