@@ -735,7 +735,7 @@ REVIEW
        Food is above the page background,
        but cards have a higher z-index.
     */
-    z-index: 4;
+    z-index: 6;
 
     overflow: hidden;
 }
@@ -1241,7 +1241,7 @@ MOBILE
 
 .must-try {
     position: relative;
-    z-index: 6;
+    z-index: 3;
 }
 
 .must-try-items {
@@ -1382,6 +1382,7 @@ MOBILE
     width: 100%;
 
     position: relative;
+    z-index: 3;
 
     padding: 80px 7% 90px;
 
