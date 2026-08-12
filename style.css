@@ -720,7 +720,7 @@ REVIEW
 
 .floating-foods {
 
-    position: fixed;
+    position: absolute;
 
     top: 0;
     left: 0;
@@ -786,11 +786,11 @@ CHICKEN - RIGHT
 
 .food-chicken {
 
-    width: 230px;
+    width: 170px;
 
-    right: -30px;
+    right: 10px;
 
-    top: 20%;
+    top: 10%;
 
     animation-delay: 1s;
 }
@@ -802,11 +802,13 @@ DOSA - LEFT
 
 .food-dosa {
 
-    width: 230px;
+    width: 170px;
 
-    left: -55px;
+    left: 10px;
 
-    top: 64%;
+    bottom: 16%;
+
+    top: auto;
 
     animation-delay: 2s;
 }
@@ -818,11 +820,13 @@ NAAN - RIGHT
 
 .food-naan {
 
-    width: 300px;
+    width: 200px;
 
-    right: -40px;
+    right: 10px;
 
-    top: 50%;
+    bottom: 18%;
+
+    top: auto;
 
     animation-delay: 1.5s;
 }
