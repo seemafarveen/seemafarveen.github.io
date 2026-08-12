@@ -293,9 +293,7 @@
     <div class="must-try-items">
 
         <!-- BIRIYANI -->
-       <a href="#" class="must-item"></a>
-        <a href="javascript:void(0);" class="must-item"
-   onclick="openMenu('biryani'); return false;">
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('biryani'); return false;">
 
             <div class="food-circle">
                 <img src="b1.png" alt="Biriyani">
@@ -314,9 +312,7 @@
 
 
         <!-- CHICKEN -->
-        <a href="#" class="must-item">
-            <a href="javascript:void(0);" class="must-item"
-   onclick="openMenu('chicken'); return false;">
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('chicken'); return false;">
 
             <div class="food-circle">
                 <img src="chikn1.png" alt="Chicken Specials">
@@ -335,9 +331,7 @@
 
 
         <!-- MUTTON -->
-        <a href="#" class="must-item">
-            <a href="javascript:void(0);" class="must-item"
-   onclick="openMenu('mutton'); return false;">
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('mutton'); return false;">
 
             <div class="food-circle">
                 <img src="mutton1.png" alt="Mutton Specials">
@@ -356,9 +350,7 @@
 
 
         <!-- VEG -->
-        <a href="#" class="must-item">
-            <a href="javascript:void(0);" class="must-item"
-   onclick="openMenu('veg'); return false;">
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('veg'); return false;">
 
             <div class="food-circle">
                 <img src="veg 1.png" alt="Veg Specials">
@@ -377,10 +369,7 @@
 
 
         <!-- TODAY'S MENU -->
-        <a href="#" class="must-item">
-            <a href="javascript:void(0);" class="must-item"
-   onclick="openMenu('today'); return false;">
-            
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('today'); return false;">
 
             <div class="food-circle">
                 <img src="dosa1.png" alt="Today's Menu">
@@ -397,14 +386,142 @@
 
         </a>
 
+
+        <!-- LUNCH MENU -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('lunch'); return false;">
+
+            <div class="food-circle">
+                <img src="biriyani1.png" alt="Lunch Menu">
+            </div>
+
+            <h3>Lunch Menu</h3>
+
+            <p>
+                Explore our lunch<br>
+                favorites
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
+
+        <!-- EGGS -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('eggs'); return false;">
+
+            <div class="food-circle">
+                <img src="dosa.png" alt="Egg Specials">
+            </div>
+
+            <h3>Egg Specials</h3>
+
+            <p>
+                Explore our egg<br>
+                favorites
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
+
+        <!-- DINNER -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('dinner'); return false;">
+
+            <div class="food-circle">
+                <img src="naan.webp" alt="Dinner Menu">
+            </div>
+
+            <h3>Dinner Menu</h3>
+
+            <p>
+                Discover our dinner<br>
+                specials
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
+
+        <!-- BREADS -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('breads'); return false;">
+
+            <div class="food-circle">
+                <img src="chicken kebab.png" alt="Breads & Rolls">
+            </div>
+
+            <h3>Breads</h3>
+
+            <p>
+                Explore our breads<br>
+                and parottas
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
+
+        <!-- RICE & NOODLES -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('rice'); return false;">
+
+            <div class="food-circle">
+                <img src="b1.png" alt="Rice & Noodles">
+            </div>
+
+            <h3>Rice & Noodles</h3>
+
+            <p>
+                Explore our fried rice<br>
+                and noodles
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
+
+        <!-- DRINKS -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('drinks'); return false;">
+
+            <div class="food-circle">
+                <img src="dosa1.png" alt="Drinks">
+            </div>
+
+            <h3>Drinks</h3>
+
+            <p>
+                Refresh with our<br>
+                beverage choices
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
+
+        <!-- SWEET BEEDA -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('sweet'); return false;">
+
+            <div class="food-circle">
+                <img src="veg 1.png" alt="Sweet Beeda">
+            </div>
+
+            <h3>Sweet Beeda</h3>
+
+            <p>
+                Try our sweet<br>
+                dessert treats
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
     </div>
 
-</section> 
-        </div>
-
-
-    </div>
-
+</section>
 </section>
 
 
@@ -730,6 +847,369 @@ function openMenu(category) {
             <div class="menu-item">
                 <span>Cheranadu Chicken Gravy</span>
                 <strong>₹220</strong>
+            </div>
+
+        `;
+
+    }
+
+    /* =================================
+       LUNCH MENU
+       ================================= */
+
+    else if (category === "lunch") {
+
+        title.innerHTML = "🍽️ Lunch Menu";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Standard Meals - Veg</span>
+                <strong>₹100</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Special Meals - Veg</span>
+                <strong>₹159</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Special Meals - Non Veg</span>
+                <strong>₹159</strong>
+            </div>
+
+        `;
+
+    }
+
+    /* =================================
+       EGGS
+       ================================= */
+
+    else if (category === "eggs") {
+
+        title.innerHTML = "🥚 Egg Specials";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Boiled Egg</span>
+                <strong>₹15</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Half Boil</span>
+                <strong>₹15</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Full Boil</span>
+                <strong>₹15</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Omelette</span>
+                <strong>₹20</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Kalaki</span>
+                <strong>₹25</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Kulambu Kalaki</span>
+                <strong>₹50</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Double Omelette</span>
+                <strong>₹50</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Egg Podi Mass</span>
+                <strong>₹80</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Egg Keema</span>
+                <strong>₹80</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Karaadi Omelette</span>
+                <strong>₹50</strong>
+            </div>
+
+        `;
+
+    }
+
+    /* =================================
+       DINNER MENU
+       ================================= */
+
+    else if (category === "dinner") {
+
+        title.innerHTML = "🌙 Dinner Menu";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Idly (Single)</span>
+                <strong>₹18</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Idly (Set)</span>
+                <strong>₹36</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Ghee Podi Idly</span>
+                <strong>₹40</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Dosa</span>
+                <strong>₹40</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Egg Dosa</span>
+                <strong>₹60</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Chicken Kari Dosa</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Mutton Kari Dosa</span>
+                <strong>₹260</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Uttapam</span>
+                <strong>₹60</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Onion Uttapam</span>
+                <strong>₹80</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Plain Roast</span>
+                <strong>₹70</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Onion Roast</span>
+                <strong>₹90</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Podi Roast</span>
+                <strong>₹90</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Egg Roast</span>
+                <strong>₹110</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Onion Egg Roast</span>
+                <strong>₹110</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Ghee Roast</span>
+                <strong>₹140</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Ghee Podi Roast</span>
+                <strong>₹160</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Ghee Onion Roast</span>
+                <strong>₹180</strong>
+            </div>
+
+        `;
+
+    }
+
+    /* =================================
+       BREADS
+       ================================= */
+
+    else if (category === "breads") {
+
+        title.innerHTML = "🥖 Breads & Parottas";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Chapatti</span>
+                <strong>₹30</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Parotta</span>
+                <strong>₹25</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Nool Parotta</span>
+                <strong>₹50</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Bun Parotta</span>
+                <strong>₹50</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Cheranadu Spl Parotta (Single)</span>
+                <strong>₹60</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Cheranadu Spl Parotta (Set)</span>
+                <strong>₹120</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Leaf Mutton Parotta</span>
+                <strong>₹280</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Leaf Chicken Parotta</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Veechu Parotta</span>
+                <strong>₹50</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Egg Veechu Parotta</span>
+                <strong>₹70</strong>
+            </div>
+
+        `;
+
+    }
+
+    /* =================================
+       RICE & NOODLES
+       ================================= */
+
+    else if (category === "rice") {
+
+        title.innerHTML = "🍜 Rice & Noodles";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Veg Fried Rice / Noodles</span>
+                <strong>₹100</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Egg Fried Rice / Noodles</span>
+                <strong>₹110</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Gobi Fried Rice / Noodles</span>
+                <strong>₹140</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Chicken Fried Rice / Noodles</span>
+                <strong>₹150</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Mushroom Fried Rice / Noodles</span>
+                <strong>₹150</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Paneer Fried Rice / Noodles</span>
+                <strong>₹170</strong>
+            </div>
+
+        `;
+
+    }
+
+    /* =================================
+       DRINKS
+       ================================= */
+
+    else if (category === "drinks") {
+
+        title.innerHTML = "🥤 Drinks";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Water Bottle @20</span>
+                <strong>₹20</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Goli Soda @30</span>
+                <strong>₹30</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Soft Drinks @10 Bottle</span>
+                <strong>₹10</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Soft Drinks @20</span>
+                <strong>₹20</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Goli Soda @40</span>
+                <strong>₹40</strong>
+            </div>
+
+        `;
+
+    }
+
+    /* =================================
+       SWEET BEEDA
+       ================================= */
+
+    else if (category === "sweet") {
+
+        title.innerHTML = "🍬 Sweet Beeda";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Chocolate Beeda</span>
+                <strong>₹20</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Rosemilk Beeda</span>
+                <strong>₹20</strong>
             </div>
 
         `;

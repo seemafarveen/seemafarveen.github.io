@@ -735,7 +735,7 @@ REVIEW
        Food is above the page background,
        but cards have a higher z-index.
     */
-    z-index: 5;
+    z-index: 4;
 
     overflow: hidden;
 }
@@ -1235,6 +1235,11 @@ MOBILE
 
 /* Five food items */
 
+.must-try {
+    position: relative;
+    z-index: 6;
+}
+
 .must-try-items {
     max-width: 1250px;
     margin: 0 auto;
@@ -1257,7 +1262,7 @@ MOBILE
     transition: transform 0.3s ease;
 }
 
-.must-item:last-child {
+.must-item:nth-child(5n) {
     border-right: none;
 }
 
@@ -1494,12 +1499,17 @@ MOBILE
 
 @media (max-width: 1000px) {
 
+    .must-try {
+        position: relative;
+        z-index: 6;
+    }
+
     .must-try-items {
         grid-template-columns: repeat(3, 1fr);
         row-gap: 50px;
     }
 
-    .must-item:nth-child(3) {
+    .must-item:nth-child(3n) {
         border-right: none;
     }
 
@@ -1528,6 +1538,8 @@ MOBILE
 @media (max-width: 700px) {
 
     .must-try {
+        position: relative;
+        z-index: 6;
         padding: 60px 15px 70px;
     }
 
