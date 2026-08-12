@@ -720,7 +720,7 @@ REVIEW
 
 .floating-foods {
 
-    position: absolute;
+    position: fixed;
 
     top: 0;
     left: 0;
@@ -732,10 +732,9 @@ REVIEW
 
     /*
        IMPORTANT:
-       Food is above the page background,
-       but cards have a higher z-index.
+       Food floats over the page but stays behind main content.
     */
-    z-index: 6;
+    z-index: 1;
 
     overflow: hidden;
 }
@@ -1239,9 +1238,17 @@ MOBILE
 
 /* Five food items */
 
+.hero,
+section,
+.must-try,
+.food-promise {
+    position: relative;
+    z-index: 2;
+}
+
 .must-try {
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 
 .must-try-items {
