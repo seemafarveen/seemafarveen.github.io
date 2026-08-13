@@ -168,7 +168,7 @@ body {
    SHOOTING ARROW
 ===================================================== */
 
-.shoot-arrow {
+/*.shoot-arrow {
 
     position: absolute;
 
@@ -195,10 +195,10 @@ body {
         ease-out
         1.9s
         forwards;
-}
+}*/
 
 
-/* Arrow head */
+/* Arrow head 
 
 .shoot-arrow::before {
 
@@ -225,7 +225,7 @@ body {
 
     border-bottom:
         18px solid #d79a2b;
-}
+}*/
 
 
 /* Arrow animation */
