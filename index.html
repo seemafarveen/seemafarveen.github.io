@@ -9,24 +9,176 @@
 
     <title>Cheranadu Unavagam</title>
 
-    <!-- MAIN CSS -->
+    <!-- CONNECT CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- FONT AWESOME -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
+    <!-- POPUP STYLE -->
+    <style>
 
+        .menu-popup {
+            display: none;
+
+            position: fixed;
+            z-index: 9999;
+
+            left: 0;
+            top: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.65);
+
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        .menu-popup.show {
+            display: flex;
+        }
+
+        .menu-popup-content {
+
+            position: relative;
+
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+
+            overflow-y: auto;
+
+            background: #fff8e9;
+
+            padding: 35px;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.35);
+
+            animation: popupOpen 0.3s ease;
+        }
+
+        @keyframes popupOpen {
+
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+        }
+
+        .menu-popup-content h2 {
+
+            margin-top: 5px;
+            margin-bottom: 25px;
+
+            color: #4a2b20;
+
+            text-align: center;
+
+            font-size: 35px;
+        }
+
+        .close-button {
+
+            position: absolute;
+
+            top: 12px;
+            right: 15px;
+
+            width: 40px;
+            height: 40px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: #4a2b20;
+            color: white;
+
+            font-size: 25px;
+
+            cursor: pointer;
+
+            line-height: 40px;
+        }
+
+        .close-button:hover {
+            background: #d79a2b;
+        }
+
+        .menu-item {
+
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 20px;
+
+            background: #fffaf0;
+
+            padding: 15px 18px;
+
+            margin: 10px 0;
+
+            border-radius: 12px;
+
+            border: 1px solid #e4c98e;
+
+            color: #4a2b20;
+
+            font-size: 17px;
+        }
+
+        .menu-item strong {
+
+            color: #d79a2b;
+
+            white-space: nowrap;
+
+            font-size: 18px;
+        }
+
+        @media (max-width: 700px) {
+
+            .menu-popup-content {
+                width: 95%;
+                padding: 30px 18px;
+            }
+
+            .menu-popup-content h2 {
+                font-size: 28px;
+            }
+
+            .menu-item {
+                font-size: 15px;
+                padding: 13px;
+            }
+
+        }
+
+    </style>
+<link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 
-<body>
 
+</section>
 
-<!-- =====================================================
+</section><body>
+<!-- =========================================
      FLOATING FOOD IMAGES
-===================================================== -->
+========================================= -->
 
 <div class="floating-foods">
 
@@ -57,32 +209,39 @@
 </div>
 
 
-
-<!-- =====================================================
-     HERO SECTION
-===================================================== -->
+<!-- ================================= -->
+<!-- HERO SECTION -->
+<!-- ================================= -->
 
 <header class="hero">
 
- <div class="logo-area">
+    <div class="logo-area">
 
-    <img
-        src="cheranadu-logo-transparent.gif"
-        class="cheranadu-gif"
-        alt="Cheranadu Unavagam"
-    >
+        <div class="brand-name">
 
-</div>
+            <span>CHERANAD</span>
 
-    <p class="hero-tagline">
+            <img
+                src="cheranadu-bow-icon.png"
+                class="u-bow-logo"
+                alt="Cheranadu logo"
+            >
+
+        </div>
+
+        <div class="shoot-arrow"></div>
+
+        <h2>UNAVAGAM</h2>
+
+    </div>
+
+    <p>
         A taste rooted in heritage.
     </p>
 
+    <!-- EXPLORE MENU BUTTON -->
 
-    <a
-        href="#menu"
-        class="explore-menu-button"
-    >
+    <a href="#menu" class="explore-menu-button">
         Explore Menu
     </a>
 
@@ -90,9 +249,9 @@
 
 
 
-<!-- =====================================================
-     HISTORY
-===================================================== -->
+<!-- ================================= -->
+<!-- HISTORY SECTION -->
+<!-- ================================= -->
 
 <section id="history">
 
@@ -112,47 +271,32 @@
 
 
 
-<!-- =====================================================
-     MUST TRY
-===================================================== -->
+<!-- ================================= -->
+<!-- MENU CATEGORIES -->
+<!-- ================================= -->
 
-<section
-    class="must-try"
-    id="menu"
->
+<section id="menu">
+
+   <!-- =========================
+     MUST TRY SECTION
+========================= -->
+
+<section class="must-try" id="must-try">
 
     <div class="section-title">
-
         <h2>Must Try</h2>
-
         <div class="title-line">
             <span>◆</span>
         </div>
-
     </div>
-
-
 
     <div class="must-try-items">
 
-
-        <!-- =================================================
-             BIRIYANI
-        ================================================== -->
-
-        <a
-            href="javascript:void(0);"
-            class="must-item"
-            onclick="openMenu('biryani')"
-        >
+        <!-- BIRIYANI -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('biryani'); return false;">
 
             <div class="food-circle">
-
-                <img
-                    src="b1.png"
-                    alt="Biriyani"
-                >
-
+                <img src="b1.png" alt="Biriyani">
             </div>
 
             <h3>Biriyani</h3>
@@ -162,31 +306,16 @@
                 Biriyani menu
             </p>
 
-            <span class="gold-diamond">
-                ◆
-            </span>
+            <span class="gold-diamond">◆</span>
 
         </a>
 
 
-
-        <!-- =================================================
-             CHICKEN
-        ================================================== -->
-
-        <a
-            href="javascript:void(0);"
-            class="must-item"
-            onclick="openMenu('chicken')"
-        >
+        <!-- CHICKEN -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('chicken'); return false;">
 
             <div class="food-circle">
-
-                <img
-                    src="chikn1.png"
-                    alt="Chicken Specials"
-                >
-
+                <img src="chikn1.png" alt="Chicken Specials">
             </div>
 
             <h3>Chicken Specials</h3>
@@ -196,31 +325,16 @@
                 specialities
             </p>
 
-            <span class="gold-diamond">
-                ◆
-            </span>
+            <span class="gold-diamond">◆</span>
 
         </a>
 
 
-
-        <!-- =================================================
-             MUTTON
-        ================================================== -->
-
-        <a
-            href="javascript:void(0);"
-            class="must-item"
-            onclick="openMenu('mutton')"
-        >
+        <!-- MUTTON -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('mutton'); return false;">
 
             <div class="food-circle">
-
-                <img
-                    src="mutton.jpg"
-                    alt="Mutton Specials"
-                >
-
+                <img src="mutton1.png" alt="Mutton Specials">
             </div>
 
             <h3>Mutton Specials</h3>
@@ -230,31 +344,16 @@
                 specialities
             </p>
 
-            <span class="gold-diamond">
-                ◆
-            </span>
+            <span class="gold-diamond">◆</span>
 
         </a>
 
 
-
-        <!-- =================================================
-             VEG
-        ================================================== -->
-
-        <a
-            href="javascript:void(0);"
-            class="must-item"
-            onclick="openMenu('veg')"
-        >
+        <!-- VEG -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('veg'); return false;">
 
             <div class="food-circle">
-
-                <img
-                    src="veg.jpg"
-                    alt="Veg Specials"
-                >
-
+                <img src="veg 1.png" alt="Veg Specials">
             </div>
 
             <h3>Veg Specials</h3>
@@ -264,31 +363,16 @@
                 vegetarian menu
             </p>
 
-            <span class="gold-diamond">
-                ◆
-            </span>
+            <span class="gold-diamond">◆</span>
 
         </a>
 
 
-
-        <!-- =================================================
-             TODAY'S MENU
-        ================================================== -->
-
-        <a
-            href="javascript:void(0);"
-            class="must-item"
-            onclick="openMenu('today')"
-        >
+        <!-- TODAY'S MENU -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('today'); return false;">
 
             <div class="food-circle">
-
-                <img
-                    src="today.jpg"
-                    alt="Today's Menu"
-                >
-
+                <img src="dosa1.png" alt="Today's Menu">
             </div>
 
             <h3>Today's Menu</h3>
@@ -298,22 +382,153 @@
                 special menu
             </p>
 
-            <span class="gold-diamond">
-                ◆
-            </span>
+            <span class="gold-diamond">◆</span>
 
         </a>
 
 
+        <!-- LUNCH MENU -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('lunch'); return false;">
+
+            <div class="food-circle">
+                <img src="biriyani1.png" alt="Lunch Menu">
+            </div>
+
+            <h3>Lunch Menu</h3>
+
+            <p>
+                Explore our lunch<br>
+                favorites
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
+
+        <!-- EGGS -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('eggs'); return false;">
+
+            <div class="food-circle">
+                <img src="egg.png" alt="Egg Specials">
+            </div>
+
+            <h3>Egg Specials</h3>
+
+            <p>
+                Explore our egg<br>
+                favorites
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
+
+        <!-- DINNER -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('dinner'); return false;">
+
+            <div class="food-circle">
+                <img src="naan.webp" alt="Dinner Menu">
+            </div>
+
+            <h3>Dinner Menu</h3>
+
+            <p>
+                Discover our dinner<br>
+                specials
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
+
+        <!-- BREADS -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('breads'); return false;">
+
+            <div class="food-circle">
+                <img src="breads.png" alt="Breads & Rolls">
+            </div>
+
+            <h3>Breads</h3>
+
+            <p>
+                Explore our breads<br>
+                and parottas
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
+
+        <!-- RICE & NOODLES -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('rice'); return false;">
+
+            <div class="food-circle">
+                <img src="ainoodles png.webp" alt="Rice & Noodles">
+            </div>
+
+            <h3>Rice & Noodles</h3>
+
+            <p>
+                Explore our fried rice<br>
+                and noodles
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
+
+        <!-- DRINKS -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('drinks'); return false;">
+
+            <div class="food-circle">
+                <img src="goli-soda.png" alt="Drinks">
+            </div>
+
+            <h3>Drinks</h3>
+
+            <p>
+                Refresh with our<br>
+                beverage choices
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
+
+        <!-- SWEET BEEDA -->
+        <a href="javascript:void(0);" class="must-item" onclick="openMenu('sweet'); return false;">
+
+            <div class="food-circle">
+                <img src="beeda.png" alt="Sweet Beeda">
+            </div>
+
+            <h3>Sweet Beeda</h3>
+
+            <p>
+                Try our sweet<br>
+                dessert treats
+            </p>
+
+            <span class="gold-diamond">◆</span>
+
+        </a>
+
     </div>
 
+</section>
 </section>
 
 
 
-<!-- =====================================================
-     MENU POPUP
-===================================================== -->
+<!-- ================================= -->
+<!-- MENU POPUP -->
+<!-- ================================= -->
 
 <div
     id="menuPopup"
@@ -321,6 +536,9 @@
 >
 
     <div class="menu-popup-content">
+
+
+        <!-- CLOSE BUTTON -->
 
         <button
             class="close-button"
@@ -330,402 +548,49 @@
         </button>
 
 
+        <!-- MENU TITLE -->
+
         <h2 id="menuTitle">
             Menu
         </h2>
 
 
+        <!-- MENU ITEMS -->
+
         <div id="menuItems"></div>
 
+
     </div>
 
 </div>
 
 
 
-<!-- =====================================================
-     OUR FOOD PROMISE
-===================================================== -->
-
-<section class="food-promise">
-
-    <div class="section-title">
-
-        <h2>Our Food Promise</h2>
-
-        <div class="title-line">
-            <span>◆</span>
-        </div>
-
-    </div>
-
-
-
-    <div class="promise-list">
-
-
-        <!-- 1 -->
-
-        <div class="promise-item">
-
-            <div class="promise-icon">
-                <i class="fa-solid fa-leaf"></i>
-            </div>
-
-            <div>
-
-                <h3>No Preservatives</h3>
-
-                <p>
-                    Freshly prepared food without
-                    added preservatives.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- 2 -->
-
-        <div class="promise-item">
-
-            <div class="promise-icon">
-                <i class="fa-solid fa-seedling"></i>
-            </div>
-
-            <div>
-
-                <h3>No Ajinomoto</h3>
-
-                <p>
-                    Prepared without Ajinomoto.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- 3 -->
-
-        <div class="promise-item">
-
-            <div class="promise-icon">
-                <i class="fa-solid fa-drumstick-bite"></i>
-            </div>
-
-            <div>
-
-                <h3>Daily Fresh Meat</h3>
-
-                <p>
-                    Fresh meat prepared for the
-                    day's cooking.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- 4 -->
-
-        <div class="promise-item">
-
-            <div class="promise-icon">
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-
-            <div>
-
-                <h3>100% Halal</h3>
-
-                <p>
-                    Halal food prepared according
-                    to halal requirements.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- 5 -->
-
-        <div class="promise-item">
-
-            <div class="promise-icon">
-                <i class="fa-solid fa-droplet"></i>
-            </div>
-
-            <div>
-
-                <h3>RO Water</h3>
-
-                <p>
-                    RO-purified water is used
-                    in our kitchen.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- 6 -->
-
-        <div class="promise-item">
-
-            <div class="promise-icon">
-                <i class="fa-solid fa-bottle-droplet"></i>
-            </div>
-
-            <div>
-
-                <h3>Cold-Pressed Oil</h3>
-
-                <p>
-                    Cooking with cold-pressed oil.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- 7 -->
-
-        <div class="promise-item promise-center">
-
-            <div class="promise-icon">
-                <i class="fa-solid fa-seedling"></i>
-            </div>
-
-            <div>
-
-                <h3>No Artificial Colours</h3>
-
-                <p>
-                    Prepared without artificial
-                    food colours.
-                </p>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CUSTOMER REVIEWS
-===================================================== -->
-
-<section class="reviews">
-
-    <h2>
-        What Our Customers Say
-    </h2>
-
-    <p class="review-intro">
-        A taste of Cheranadu, loved by our customers.
-    </p>
-
-
-    <div class="review-cards">
-
-
-        <div class="review-card">
-
-            <div class="stars">
-                ★★★★★
-            </div>
-
-            <h3>
-                Delicious & Authentic!
-            </h3>
-
-            <p>
-                "The biriyani was amazing and full
-                of traditional flavours. It truly felt
-                like an authentic Chera-style meal."
-            </p>
-
-            <span>
-                — Happy Customer
-            </span>
-
-        </div>
-
-
-
-        <div class="review-card">
-
-            <div class="stars">
-                ★★★★★
-            </div>
-
-            <h3>
-                Excellent Food
-            </h3>
-
-            <p>
-                "Loved the chicken specials and the
-                traditional taste. Everything was fresh
-                and beautifully prepared."
-            </p>
-
-            <span>
-                — Happy Customer
-            </span>
-
-        </div>
-
-
-
-        <div class="review-card">
-
-            <div class="stars">
-                ★★★★★
-            </div>
-
-            <h3>
-                Wonderful Experience
-            </h3>
-
-            <p>
-                "The food, atmosphere and traditional
-                flavours made our visit really special."
-            </p>
-
-            <span>
-                — Happy Customer
-            </span>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     INSTAGRAM
-===================================================== -->
-
-<section class="instagram-section">
-
-    <h2>
-        Follow Cheranadu Unavagam
-    </h2>
-
-    <p>
-        Follow us on Instagram for delicious food,
-        updates and special moments.
-    </p>
-
-
-    <a
-        href="https://www.instagram.com/cheranaduunavagam/"
-        target="_blank"
-        class="instagram-button"
-    >
-
-        <i class="fa-brands fa-instagram"></i>
-
-        Follow us on Instagram
-
-    </a>
-
-</section>
-
-
-
-<!-- =====================================================
-     CUSTOMER REVIEW POPUP
-===================================================== -->
-
-<div
-    id="reviewPopup"
-    class="review-popup"
->
-
-    <button
-        class="review-popup-close"
-        onclick="closeReviewPopup()"
-    >
-        ×
-    </button>
-
-    <div class="popup-stars">
-        ★★★★★
-    </div>
-
-    <h3>
-        Loving Cheranadu?
-    </h3>
-
-    <p>
-        Our customers love the taste!
-    </p>
-
-    <span>
-        ⭐ 5 Star Experience
-    </span>
-
-</div>
-
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
+<!-- ================================= -->
+<!-- JAVASCRIPT -->
+<!-- ================================= -->
 
 <script>
 
-
-/* =====================================================
-   MENU DATA
-===================================================== */
-
 function openMenu(category) {
-
 
     const popup =
         document.getElementById("menuPopup");
 
-
     const title =
         document.getElementById("menuTitle");
-
 
     const items =
         document.getElementById("menuItems");
 
 
-
-    /* =================================================
-       BIRIYANI
-    ================================================= */
+    /* =================================
+       BIRYANI
+       ================================= */
 
     if (category === "biryani") {
 
-        title.innerHTML =
-            "🍚 Biriyani";
-
+        title.innerHTML = "🍚 Biryani";
 
         items.innerHTML = `
 
@@ -749,16 +614,13 @@ function openMenu(category) {
     }
 
 
-
-    /* =================================================
-       CHICKEN
-    ================================================= */
+    /* =================================
+       CHICKEN SPECIALS
+       ================================= */
 
     else if (category === "chicken") {
 
-        title.innerHTML =
-            "🍗 Chicken Specials";
-
+        title.innerHTML = "🍗 Chicken Specials";
 
         items.innerHTML = `
 
@@ -788,11 +650,6 @@ function openMenu(category) {
             </div>
 
             <div class="menu-item">
-                <span>Fish Fry (Seasonable)</span>
-                <strong>₹100</strong>
-            </div>
-
-            <div class="menu-item">
                 <span>Kongu Varuval (Nattu Kozhi)</span>
                 <strong>₹240</strong>
             </div>
@@ -802,26 +659,18 @@ function openMenu(category) {
                 <strong>₹220</strong>
             </div>
 
-            <div class="menu-item">
-                <span>Prawn Thokku</span>
-                <strong>₹240</strong>
-            </div>
-
         `;
 
     }
 
 
-
-    /* =================================================
-       MUTTON
-    ================================================= */
+    /* =================================
+       MUTTON SPECIALS
+       ================================= */
 
     else if (category === "mutton") {
 
-        title.innerHTML =
-            "🥘 Mutton Specials";
-
+        title.innerHTML = "🥘 Mutton Specials";
 
         items.innerHTML = `
 
@@ -843,11 +692,6 @@ function openMenu(category) {
             <div class="menu-item">
                 <span>Mutton Kola Urundai (3 Pcs)</span>
                 <strong>₹210</strong>
-            </div>
-
-            <div class="menu-item">
-                <span>Kongu Varuval (Nattu Kozhi)</span>
-                <strong>₹240</strong>
             </div>
 
             <div class="menu-item">
@@ -875,16 +719,13 @@ function openMenu(category) {
     }
 
 
-
-    /* =================================================
-       VEG
-    ================================================= */
+    /* =================================
+       VEG SPECIALS
+       ================================= */
 
     else if (category === "veg") {
 
-        title.innerHTML =
-            "🌱 Veg Specials";
-
+        title.innerHTML = "🌱 Veg Specials";
 
         items.innerHTML = `
 
@@ -978,16 +819,13 @@ function openMenu(category) {
     }
 
 
-
-    /* =================================================
+    /* =================================
        TODAY'S MENU
-    ================================================= */
+       ================================= */
 
     else if (category === "today") {
 
-        title.innerHTML =
-            "⭐ Today's Menu";
-
+        title.innerHTML = "⭐ Today's Menu";
 
         items.innerHTML = `
 
@@ -1015,89 +853,617 @@ function openMenu(category) {
 
     }
 
+    /* =================================
+       LUNCH MENU
+       ================================= */
 
+    else if (category === "lunch") {
+
+        title.innerHTML = "🍽️ Lunch Menu";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Standard Meals - Veg</span>
+                <strong>₹100</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Special Meals - Veg</span>
+                <strong>₹159</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Special Meals - Non Veg</span>
+                <strong>₹159</strong>
+            </div>
+
+        `;
+
+    }
+
+    /* =================================
+       EGGS
+       ================================= */
+
+    else if (category === "eggs") {
+
+        title.innerHTML = "🥚 Egg Specials";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Boiled Egg</span>
+                <strong>₹15</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Half Boil</span>
+                <strong>₹15</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Full Boil</span>
+                <strong>₹15</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Omelette</span>
+                <strong>₹20</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Kalaki</span>
+                <strong>₹25</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Kulambu Kalaki</span>
+                <strong>₹50</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Double Omelette</span>
+                <strong>₹50</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Egg Podi Mass</span>
+                <strong>₹80</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Egg Keema</span>
+                <strong>₹80</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Karaadi Omelette</span>
+                <strong>₹50</strong>
+            </div>
+
+        `;
+
+    }
+
+    /* =================================
+       DINNER MENU
+       ================================= */
+
+    else if (category === "dinner") {
+
+        title.innerHTML = "🌙 Dinner Menu";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Idly (Single)</span>
+                <strong>₹18</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Idly (Set)</span>
+                <strong>₹36</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Ghee Podi Idly</span>
+                <strong>₹40</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Dosa</span>
+                <strong>₹40</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Egg Dosa</span>
+                <strong>₹60</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Chicken Kari Dosa</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Mutton Kari Dosa</span>
+                <strong>₹260</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Uttapam</span>
+                <strong>₹60</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Onion Uttapam</span>
+                <strong>₹80</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Plain Roast</span>
+                <strong>₹70</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Onion Roast</span>
+                <strong>₹90</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Podi Roast</span>
+                <strong>₹90</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Egg Roast</span>
+                <strong>₹110</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Onion Egg Roast</span>
+                <strong>₹110</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Ghee Roast</span>
+                <strong>₹140</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Ghee Podi Roast</span>
+                <strong>₹160</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Ghee Onion Roast</span>
+                <strong>₹180</strong>
+            </div>
+
+        `;
+
+    }
+
+    /* =================================
+       BREADS
+       ================================= */
+
+    else if (category === "breads") {
+
+        title.innerHTML = "🥖 Breads & Parottas";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Chapatti</span>
+                <strong>₹30</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Parotta</span>
+                <strong>₹25</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Nool Parotta</span>
+                <strong>₹50</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Bun Parotta</span>
+                <strong>₹50</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Cheranadu Spl Parotta (Single)</span>
+                <strong>₹60</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Cheranadu Spl Parotta (Set)</span>
+                <strong>₹120</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Leaf Mutton Parotta</span>
+                <strong>₹280</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Leaf Chicken Parotta</span>
+                <strong>₹240</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Veechu Parotta</span>
+                <strong>₹50</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Egg Veechu Parotta</span>
+                <strong>₹70</strong>
+            </div>
+
+        `;
+
+    }
+
+    /* =================================
+       RICE & NOODLES
+       ================================= */
+
+    else if (category === "rice") {
+
+        title.innerHTML = "🍜 Rice & Noodles";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Veg Fried Rice / Noodles</span>
+                <strong>₹100</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Egg Fried Rice / Noodles</span>
+                <strong>₹110</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Gobi Fried Rice / Noodles</span>
+                <strong>₹140</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Chicken Fried Rice / Noodles</span>
+                <strong>₹150</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Mushroom Fried Rice / Noodles</span>
+                <strong>₹150</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Paneer Fried Rice / Noodles</span>
+                <strong>₹170</strong>
+            </div>
+
+        `;
+
+    }
+
+    /* =================================
+       DRINKS
+       ================================= */
+
+    else if (category === "drinks") {
+
+        title.innerHTML = "🥤 Drinks";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Water Bottle @20</span>
+                <strong>₹20</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Goli Soda @30</span>
+                <strong>₹30</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Soft Drinks @10 Bottle</span>
+                <strong>₹10</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Soft Drinks @20</span>
+                <strong>₹20</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Goli Soda @40</span>
+                <strong>₹40</strong>
+            </div>
+
+        `;
+
+    }
+
+    /* =================================
+       SWEET BEEDA
+       ================================= */
+
+    else if (category === "sweet") {
+
+        title.innerHTML = "🍬 Sweet Beeda";
+
+        items.innerHTML = `
+
+            <div class="menu-item">
+                <span>Chocolate Beeda</span>
+                <strong>₹20</strong>
+            </div>
+
+            <div class="menu-item">
+                <span>Rosemilk Beeda</span>
+                <strong>₹20</strong>
+            </div>
+
+        `;
+
+    }
+
+
+    /* SHOW POPUP */
 
     popup.classList.add("show");
 
 }
 
 
-
-/* =====================================================
-   CLOSE MENU
-===================================================== */
+/* =================================
+   CLOSE POPUP
+   ================================= */
 
 function closeMenu() {
 
-    document
-        .getElementById("menuPopup")
-        .classList.remove("show");
+    const popup =
+        document.getElementById("menuPopup");
+
+    popup.classList.remove("show");
 
 }
 
 
-
-/* =====================================================
-   CLICK OUTSIDE POPUP
-===================================================== */
+/* =================================
+   CLICK OUTSIDE POPUP TO CLOSE
+   ================================= */
 
 document
     .getElementById("menuPopup")
-    .addEventListener(
-        "click",
-        function(event) {
+    .addEventListener("click", function(event) {
 
-            if (
-                event.target === this
-            ) {
+        if (event.target === this) {
 
-                closeMenu();
-
-            }
+            closeMenu();
 
         }
-    );
 
-
-
-/* =====================================================
-   CUSTOMER REVIEW POPUP
-===================================================== */
-
-function closeReviewPopup() {
-
-    document
-        .getElementById("reviewPopup")
-        .classList.remove("show");
-
-}
-
-
-
-/* Show review popup after entering website */
-
-window.addEventListener(
-    "load",
-    function() {
-
-        setTimeout(
-            function() {
-
-                document
-                    .getElementById("reviewPopup")
-                    .classList.add("show");
-
-            },
-            7000
-        );
-
-    }
-);
-
+    });
 
 </script>
+<!-- =========================
+     OUR FOOD PROMISE
+========================= -->
+
+<section class="food-promise">
+
+    <div class="section-title">
+
+        <h2>Our Food Promise</h2>
+
+        <div class="title-line">
+            <span>◆</span>
+        </div>
+
+    </div>
 
 
+    <div class="promise-list">
+
+        <!-- 1 -->
+        <div class="promise-item">
+
+            <div class="promise-icon">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div>
+                <h3>No Preservatives</h3>
+                <p>
+                    Freshly prepared food without
+                    added preservatives.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- 2 -->
+        <div class="promise-item">
+
+            <div class="promise-icon">
+                <i class="fa-solid fa-seedling"></i>
+            </div>
+
+            <div>
+                <h3>No Ajinomoto</h3>
+                <p>
+                    Prepared without Ajinomoto.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- 3 -->
+        <div class="promise-item">
+
+            <div class="promise-icon">
+                <i class="fa-solid fa-drumstick-bite"></i>
+            </div>
+
+            <div>
+                <h3>Daily Fresh Meat</h3>
+                <p>
+                    Fresh meat prepared for the
+                    day's cooking.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- 4 -->
+        <div class="promise-item">
+
+            <div class="promise-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <div>
+                <h3>100% Halal</h3>
+                <p>
+                    Halal food prepared according
+                    to halal requirements.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- 5 -->
+        <div class="promise-item">
+
+            <div class="promise-icon">
+                <i class="fa-solid fa-droplet"></i>
+            </div>
+
+            <div>
+                <h3>RO Water</h3>
+                <p>
+                    RO-purified water is used
+                    in our kitchen.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- 6 -->
+        <div class="promise-item">
+
+            <div class="promise-icon">
+                <i class="fa-solid fa-bottle-droplet"></i>
+            </div>
+
+            <div>
+                <h3>Cold-Pressed Oil</h3>
+                <p>
+                    Cooking with cold-pressed oil.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- 7 -->
+        <div class="promise-item promise-center">
+
+            <div class="promise-icon">
+                <i class="fa-solid fa-seedling"></i>
+            </div>
+
+            <div>
+                <h3>No Artificial Colours</h3>
+                <p>
+                    Prepared without artificial
+                    food colours.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 </body>
+
+
+<!-- =========================
+     CUSTOMER REVIEWS
+     THIS MUST BE LAST
+     ========================= -->
+
+<section class="reviews">
+
+    <h2>What Our Customers Say</h2>
+
+    <p>A taste of Cheranadu, loved by our customers.</p>
+
+    <div class="review-card">
+        <div>★★★★★</div>
+        <h3>Delicious & Authentic!</h3>
+
+        <p>
+            "The biriyani was amazing and full of traditional flavours.
+            It truly felt like an authentic Chera-style meal."
+        </p>
+
+        <p>— Happy Customer</p>
+    </div>
+
+    <div class="review-card">
+        <div>★★★★★</div>
+        <h3>Excellent Food</h3>
+
+        <p>
+            "Loved the chicken specials and the traditional taste.
+            Everything was fresh and beautifully prepared."
+        </p>
+
+        <p>— Happy Customer</p>
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    
+    
+</footer>
+<!-- INSTAGRAM SECTION -->
+<section class="instagram-section">
+
+    <h2>Follow Cheranadu Unavagam</h2>
+
+    <p>Follow us on Instagram for delicious food, updates and special moments.</p>
+
+    <a href="https://www.instagram.com/cheranaduunavagam/"
+   target="_blank"
+   class="instagram-button">
+
+    <img src="instagram logo.png" alt="Instagram">
+    Follow us on Instagram
+ </section>
+</body>
+</html>
+
+</html>
+
 
 </html>

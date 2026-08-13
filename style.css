@@ -1,12 +1,12 @@
-/* =====================================================
-   CHERANADU UNAVAGAM
-   COMPLETE WARM THEME
-===================================================== */
+/* =========================================
+CHERANADU UNAVAGAM
+COMPLETE WARM THEME
+========================================= */
 
 
-/* =====================================================
-   BASIC PAGE
-===================================================== */
+/* =========================================
+BASIC PAGE
+========================================= */
 
 * {
     box-sizing: border-box;
@@ -30,20 +30,16 @@ body {
 }
 
 
-/* =====================================================
-   HERO
-===================================================== */
+/* =========================================
+HERO
+========================================= */
 
 .hero {
-
     min-height: 100vh;
 
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     align-items: center;
 
     text-align: center;
@@ -64,23 +60,16 @@ body {
 }
 
 
-/* =====================================================
-   LOGO AREA
-===================================================== */
+/* =========================================
+LOGO AREA
+========================================= */
 
 .logo-area {
-
     position: relative;
 
-    display: flex;
+    display: inline-block;
 
-    justify-content: center;
-
-    align-items: center;
-
-    width: 100%;
-
-    max-width: 900px;
+    text-align: center;
 
     animation:
         logoPop 1.8s
@@ -88,183 +77,89 @@ body {
         forwards;
 }
 
+/* =========================================
+BRAND NAME
+========================================= */
 
-/* =====================================================
-   NEW GIF LOGO
-===================================================== */
+.brand-name {
+    display: flex;
 
-.cheranadu-gif {
+    align-items: flex-end;
 
+    justify-content: center;
+
+    position: relative;
+
+    white-space: nowrap;
+}
+
+
+.brand-name span {
+    display: inline-block;
+
+    color: #d79a2b;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 70px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    line-height: 0.9;
+}
+
+
+/* =========================================
+U + BOW LOGO
+========================================= */
+
+.u-bow-logo {
     display: block;
 
-    width: min(650px, 85vw);
+    width: 290px;
 
     height: auto;
 
     object-fit: contain;
 
+    margin-left: -110px;
+
+    margin-bottom: -20px;
+
     position: relative;
 
-    z-index: 5;
-
-    filter:
-        drop-shadow(
-            0 15px 25px
-            rgba(74, 43, 32, 0.15)
-        );
+    z-index: 3;
 }
 
 
-/* =====================================================
-   LOGO POP ANIMATION
-===================================================== */
+/* =========================================
+UNAVAGAM
+========================================= */
 
-@keyframes logoPop {
+.logo-area h2 {
+    margin: 10px 0 0;
 
-    0% {
+    color: #4a2b20;
 
-        transform:
-            translateY(400px)
-            scale(0.35);
+    font-family: Arial, Helvetica, sans-serif;
 
-        opacity: 0;
+    font-size: 48px;
 
-    }
+    font-weight: 800;
 
-    55% {
+    letter-spacing: 1px;
 
-        transform:
-            translateY(-25px)
-            scale(1.08);
-
-        opacity: 1;
-
-    }
-
-    75% {
-
-        transform:
-            translateY(5px)
-            scale(0.98);
-
-        opacity: 1;
-
-    }
-
-    100% {
-
-        transform:
-            translateY(0)
-            scale(1);
-
-        opacity: 1;
-
-    }
-
+    line-height: 1;
 }
 
 
-/* =====================================================
-   SHOOTING ARROW
-===================================================== */
+/* =========================================
+TAGLINE
+========================================= */
 
-/*.shoot-arrow {
-
-    position: absolute;
-
-    width: 5px;
-
-    height: 110px;
-
-    background: #d79a2b;
-
-    left: 50%;
-
-    bottom: 32%;
-
-    transform:
-        translateX(-50%);
-
-    opacity: 0;
-
-    z-index: 20;
-
-    animation:
-        arrowShoot
-        1.5s
-        ease-out
-        1.9s
-        forwards;
-}*/
-
-
-/* Arrow head 
-
-.shoot-arrow::before {
-
-    content: "";
-
-    position: absolute;
-
-    top: -18px;
-
-    left: 50%;
-
-    transform:
-        translateX(-50%);
-
-    width: 0;
-
-    height: 0;
-
-    border-left:
-        8px solid transparent;
-
-    border-right:
-        8px solid transparent;
-
-    border-bottom:
-        18px solid #d79a2b;
-}*/
-
-
-/* Arrow animation */
-
-@keyframes arrowShoot {
-
-    0% {
-
-        transform:
-            translate(-50%, 80px);
-
-        opacity: 0;
-
-    }
-
-    15% {
-
-        opacity: 1;
-
-    }
-
-    100% {
-
-        transform:
-            translate(-50%, -350px);
-
-        opacity: 0;
-
-    }
-
-}
-
-
-/* =====================================================
-   HERO TAGLINE
-===================================================== */
-
-.hero-tagline {
-
+.hero p {
     font-size: 20px;
 
     margin-top: 28px;
@@ -275,9 +170,9 @@ body {
 }
 
 
-/* =====================================================
-   EXPLORE MENU BUTTON
-===================================================== */
+/* =========================================
+EXPLORE MENU BUTTON
+========================================= */
 
 .explore-menu-button {
 
@@ -287,15 +182,11 @@ body {
 
     color: white;
 
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
+    font-family: Georgia, "Times New Roman", serif;
 
     font-size: 17px;
 
-    padding:
-        15px 30px;
+    padding: 15px 30px;
 
     border-radius: 30px;
 
@@ -314,8 +205,7 @@ body {
 
     background: #6b3d2b;
 
-    transform:
-        translateY(-3px);
+    transform: translateY(-3px);
 
     box-shadow:
         0 10px 25px
@@ -323,14 +213,124 @@ body {
 }
 
 
-/* =====================================================
-   MAIN SECTIONS
-===================================================== */
+/* =========================================
+LOGO ANIMATION
+========================================= */
+
+@keyframes logoPop {
+
+    0% {
+        transform:
+            translateY(400px)
+            scale(0.35);
+
+        opacity: 0;
+    }
+
+    55% {
+        transform:
+            translateY(-25px)
+            scale(1.08);
+
+        opacity: 1;
+    }
+
+    75% {
+        transform:
+            translateY(5px)
+            scale(0.98);
+
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translateY(0)
+            scale(1);
+
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================
+SHOOTING ARROW
+========================================= */
+
+.shoot-arrow {
+
+    position: absolute;
+
+    width: 5px;
+
+    height: 110px;
+
+    background: #d79a2b;
+
+    left: 77%;
+
+    top: 40%;
+
+    transform: translateX(-50%);
+
+    opacity: 0;
+
+    z-index: 10;
+
+    animation:
+        arrowShoot 1.5s ease-out 1.9s infinite;
+}
+
+
+.shoot-arrow::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -18px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 0;
+
+    height: 0;
+
+    border-left: 8px solid transparent;
+
+    border-right: 8px solid transparent;
+
+    border-bottom: 18px solid #d79a2b;
+}
+
+
+@keyframes arrowShoot {
+
+    0% {
+        transform: translate(-100%, 0);
+
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -350px);
+
+        opacity: 0;
+    }
+
+}
+
+
+/* =========================================
+ALL MAIN SECTIONS
+========================================= */
 
 section {
 
-    padding:
-        90px 7%;
+    padding: 90px 7%;
 
     max-width: 1200px;
 
@@ -340,9 +340,9 @@ section {
 }
 
 
-/* =====================================================
-   SECTION HEADINGS
-===================================================== */
+/* =========================================
+SECTION HEADINGS
+========================================= */
 
 section h2 {
 
@@ -366,9 +366,9 @@ section p {
 }
 
 
-/* =====================================================
-   HISTORY
-===================================================== */
+/* =========================================
+HISTORY
+========================================= */
 
 #history {
 
@@ -381,287 +381,121 @@ section p {
 }
 
 
-/* =====================================================
-   MUST TRY
-===================================================== */
+/* =========================================
+MENU SECTION
+========================================= */
 
-.must-try {
-
-    position: relative;
-
-    width: 100%;
-
-    max-width: none;
-
-    padding:
-        80px 5% 90px;
-
-    background: #fff8e9;
-
-    overflow: hidden;
-}
-
-
-.section-title {
-
-    text-align: center;
-
-    margin-bottom: 50px;
-
-    position: relative;
-
-    z-index: 5;
-}
-
-
-.section-title h2 {
-
-    margin: 0;
-
-    color: #4b2c20;
-
-    font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
-
-    font-size: 48px;
-
-    font-weight: 700;
-}
-
-
-/* =====================================================
-   GOLD LINE
-===================================================== */
-
-.title-line {
-
-    width: 70px;
-
-    height: 1px;
-
-    background: #d49a29;
-
-    margin:
-        14px auto 0;
-
-    position: relative;
-}
-
-
-.title-line span {
-
-    position: absolute;
-
-    left: 50%;
-
-    top: 50%;
-
-    transform:
-        translate(-50%, -50%);
-
-    background: #fff8e9;
-
-    padding:
-        0 8px;
-
-    color: #d49a29;
-
-    font-size: 10px;
-}
-
-
-/* =====================================================
-   MUST TRY GRID
-===================================================== */
-
-.must-try-items {
-
-    max-width: 1250px;
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(5, 1fr);
-
-    position: relative;
-
-    z-index: 10;
-}
-
-
-/* =====================================================
-   MUST TRY ITEM
-===================================================== */
-
-.must-item {
-
-    text-align: center;
-
-    padding:
-        0 25px;
-
-    border-right:
-        1px solid #e5d5b7;
-
-    position: relative;
-
-    transition:
-        transform 0.3s ease;
-
-    cursor: pointer;
-
-    text-decoration: none;
-
-    color: inherit;
-
-    z-index: 11;
+#menu {
 
     background:
-        rgba(
-            255,
-            248,
-            233,
-            0.95
+        radial-gradient(
+            circle at center,
+            #f5d99b 0%,
+            #fff8e9 70%
         );
 }
 
 
-.must-item:nth-child(5n) {
+/* =========================================
+FEATURES SECTION
+========================================= */
 
-    border-right: none;
+#features {
+
+    background:
+        radial-gradient(
+            circle at center,
+            #fff4d5,
+            #fff8e9
+        );
 }
 
 
-.must-item:hover {
+/* =========================================
+CARDS
+========================================= */
 
-    transform:
-        translateY(-8px);
-}
+.cards {
 
+    display: grid;
 
-/* =====================================================
-   FOOD CIRCLE
-===================================================== */
+    grid-template-columns:
+        repeat(3, 1fr);
 
-.food-circle {
+    gap: 25px;
 
-    width: 155px;
-
-    height: 155px;
-
-    margin:
-        0 auto 25px;
-
-    padding: 6px;
-
-    border:
-        1px solid #d49a29;
-
-    border-radius: 50%;
+    margin-top: 40px;
 
     position: relative;
 
+    z-index: 6;
+}
+
+
+.cards > div {
+
+    background: #fffaf0;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    border: 1px solid #e4c98e;
+
+    box-shadow:
+        06px 20px
+        rgba(80, 40, 25, 0.08);
+
     transition:
-        all 0.4s ease;
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+    position: relative;
+
+    z-index: 6;
 }
 
 
-.food-circle::before {
+.cards > div:hover {
 
-    content: "";
+    transform: translateY(-8px);
 
-    position: absolute;
-
-    inset: -10px;
-
-    border:
-        1px solid #e7d4ad;
-
-    border-radius: 50%;
-
-    pointer-events: none;
+    box-shadow:
+        0 14px 30px
+        rgba(80, 40, 25, 0.14);
 }
 
 
-.food-circle img {
+.cards h3 {
 
-    width: 100%;
+    color: #4a2b20;
 
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-
-    border-radius: 50%;
+    font-size: 22px;
 }
 
 
-.must-item:hover
-.food-circle {
+/* =========================================
+MENU CARDS
+========================================= */
 
-    transform:
-        scale(1.05);
+.menu-card {
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fffaf0,
+            #fdf0cf
+        );
 }
 
 
-/* =====================================================
-   MUST TRY TEXT
-===================================================== */
-
-.must-item h3 {
-
-    margin: 0;
-
-    color: #4b2c20;
-
-    font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
-
-    font-size: 23px;
-
-    font-weight: 700;
-}
-
-
-.must-item p {
-
-    margin-top: 10px;
-
-    color: #5e4639;
-
-    font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
-
-    font-size: 17px;
-
-    line-height: 1.5;
-}
-
-
-.gold-diamond {
-
-    display: block;
-
-    margin-top: 14px;
-
-    color: #d49a29;
-
-    font-size: 8px;
-}
-
-
-/* =====================================================
-   MENU POPUP
-===================================================== */
+/* =========================================
+MENU POPUP
+========================================= */
 
 .menu-popup {
 
@@ -680,12 +514,7 @@ section p {
     height: 100%;
 
     background:
-        rgba(
-            74,
-            43,
-            32,
-            0.70
-        );
+        rgba(74, 43, 32, 0.65);
 
     justify-content: center;
 
@@ -701,19 +530,15 @@ section p {
 }
 
 
-/* =====================================================
-   POPUP CONTENT
-===================================================== */
-
 .menu-popup-content {
 
     position: relative;
 
     width: 90%;
 
-    max-width: 650px;
+    max-width: 600px;
 
-    max-height: 82vh;
+    max-height: 80vh;
 
     overflow-y: auto;
 
@@ -728,8 +553,7 @@ section p {
 
     border-radius: 25px;
 
-    border:
-        2px solid #d79a2b;
+    border: 2px solid #d79a2b;
 
     box-shadow:
         0 20px 60px
@@ -744,8 +568,7 @@ section p {
 
     from {
 
-        transform:
-            scale(0.8);
+        transform: scale(0.8);
 
         opacity: 0;
 
@@ -753,8 +576,7 @@ section p {
 
     to {
 
-        transform:
-            scale(1);
+        transform: scale(1);
 
         opacity: 1;
 
@@ -762,10 +584,6 @@ section p {
 
 }
 
-
-/* =====================================================
-   POPUP TITLE
-===================================================== */
 
 .menu-popup-content h2 {
 
@@ -781,9 +599,9 @@ section p {
 }
 
 
-/* =====================================================
-   CLOSE BUTTON
-===================================================== */
+/* =========================================
+CLOSE BUTTON
+========================================= */
 
 .close-button {
 
@@ -810,8 +628,6 @@ section p {
     cursor: pointer;
 
     line-height: 40px;
-
-    z-index: 5;
 }
 
 
@@ -821,9 +637,9 @@ section p {
 }
 
 
-/* =====================================================
-   MENU ITEMS
-===================================================== */
+/* =========================================
+MENU ITEMS
+========================================= */
 
 .menu-item {
 
@@ -837,16 +653,13 @@ section p {
 
     background: #fffaf0;
 
-    padding:
-        15px 18px;
+    padding: 15px 18px;
 
-    margin:
-        10px 0;
+    margin: 10px 0;
 
     border-radius: 12px;
 
-    border:
-        1px solid #e4c98e;
+    border: 1px solid #e4c98e;
 
     color: #4a2b20;
 
@@ -864,415 +677,71 @@ section p {
 }
 
 
-/* =====================================================
-   FOOD PROMISE
-===================================================== */
+/* =========================================
+REVIEW
+========================================= */
 
-.food-promise {
+.review {
 
-    width: 100%;
+    max-width: 600px;
 
-    max-width: none;
-
-    position: relative;
-
-    z-index: 3;
-
-    padding:
-        80px 7% 90px;
-
-    background: #fffdf7;
-
-    border-top:
-        1px solid #ead9b9;
-
-    border-bottom:
-        1px solid #ead9b9;
-
-    overflow: hidden;
-}
-
-
-.food-promise
-.section-title {
-
-    margin-bottom: 35px;
-}
-
-
-.food-promise
-.title-line span {
-
-    background: #fffdf7;
-}
-
-
-/* =====================================================
-   PROMISE LIST
-===================================================== */
-
-.promise-list {
-
-    max-width: 1100px;
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-}
-
-
-/* =====================================================
-   PROMISE ITEM
-===================================================== */
-
-.promise-item {
-
-    min-height: 150px;
-
-    padding:
-        30px 35px;
-
-    display: flex;
-
-    align-items: flex-start;
-
-    gap: 20px;
-
-    border-bottom:
-        1px solid #ead9b9;
-}
-
-
-.promise-item:not(
-    :nth-child(3n + 1)
-) {
-
-    border-left:
-        1px solid #ead9b9;
-}
-
-
-.promise-center {
-
-    grid-column: 2;
-}
-
-
-/* =====================================================
-   PROMISE ICON
-===================================================== */
-
-.promise-icon {
-
-    flex-shrink: 0;
-
-    width: 48px;
-
-    height: 48px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    color: #a96d13;
-
-    font-size: 30px;
-}
-
-
-.promise-item h3 {
-
-    margin:
-        0 0 8px;
-
-    color: #4b2c20;
-
-    font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
-
-    font-size: 22px;
-
-    font-weight: 700;
-}
-
-
-.promise-item p {
-
-    margin: 0;
-
-    color: #5e4639;
-
-    font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
-
-    font-size: 17px;
-
-    line-height: 1.5;
-}
-
-
-/* =====================================================
-   CUSTOMER REVIEWS
-===================================================== */
-
-.reviews {
-
-    width: 100%;
-
-    max-width: none;
-
-    padding:
-        90px 7%;
-
-    text-align: center;
-
-    background:
-        radial-gradient(
-            circle at center,
-            #f5d99b 0%,
-            #fff8e9 65%,
-            #f3d49a 100%
-        );
-}
-
-
-.reviews h2 {
-
-    margin-bottom: 10px;
-}
-
-
-.review-intro {
-
-    margin-bottom: 40px;
-
-    font-size: 18px;
-}
-
-
-/* =====================================================
-   REVIEW CARDS
-===================================================== */
-
-.review-cards {
-
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 25px;
-}
-
-
-.review-card {
-
-    background: #fffaf0;
+    margin: 40px auto;
 
     padding: 30px;
 
+    background: #fffaf0;
+
     border-radius: 20px;
-
-    border:
-        1px solid #e4c98e;
-
-    box-shadow:
-        0 8px 25px
-        rgba(
-            80,
-            40,
-            25,
-            0.08
-        );
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-
-.review-card:hover {
-
-    transform:
-        translateY(-8px);
-
-    box-shadow:
-        0 14px 30px
-        rgba(
-            80,
-            40,
-            25,
-            0.15
-        );
-}
-
-
-.stars {
-
-    color: #d79a2b;
-
-    font-size: 24px;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 12px;
-}
-
-
-.review-card h3 {
-
-    color: #4a2b20;
-
-    font-size: 23px;
-
-    margin:
-        10px 0 15px;
-}
-
-
-.review-card p {
-
-    font-size: 17px;
-
-    line-height: 1.7;
-
-    color: #4f2b20;
-}
-
-
-.review-card span {
-
-    display: block;
-
-    margin-top: 18px;
-
-    color: #d79a2b;
-
-    font-weight: bold;
-}
-
-
-/* =====================================================
-   INSTAGRAM
-===================================================== */
-
-.instagram-section {
-
-    width: 100%;
-
-    max-width: none;
-
-    padding:
-        80px 20px;
 
     text-align: center;
 
-    background: #f8f0df;
+    border: 1px solid #e4c98e;
 
-    position: relative;
-
-    clear: both;
+    box-shadow:
+        0 8px 25px
+        rgba(80, 40, 25, 0.08);
 }
 
 
-.instagram-section h2 {
+.review h3 {
 
-    font-size: 42px;
+    color: #d79a2b;
 
-    margin-bottom: 15px;
+    font-size: 25px;
 
-    color: #542b1f;
-}
-
-
-.instagram-section p {
-
-    font-size: 20px;
-
-    margin-bottom: 30px;
-
-    color: #542b1f;
-}
-
-
-.instagram-button {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    padding:
-        15px 30px;
-
-    background: #542b1f;
-
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 30px;
-
-    font-size: 18px;
-
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease;
-}
-
-
-.instagram-button i {
-
-    font-size: 28px;
-}
-
-
-.instagram-button:hover {
-
-    transform:
-        scale(1.05);
-
-    background: #7a4030;
+    letter-spacing: 5px;
 }
 
 
 /* =====================================================
-   FLOATING FOOD DECORATIONS
+   FOOD PNG IMAGES
 ===================================================== */
 
 .floating-foods {
 
     position: fixed;
 
-    inset: 0;
+    top: 0;
+    left: 0;
 
     width: 100%;
-
     height: 100vh;
 
     pointer-events: none;
 
-    z-index: 0;
+     /*
+         IMPORTANT:
+         Food floats above the page content.
+     */
+     z-index: 10;
 
     overflow: hidden;
 }
 
 
-.food {
+/* ALL FOOD IMAGES */
+
+.floating-foods .food {
 
     position: absolute;
 
@@ -1285,69 +754,85 @@ section p {
     filter:
         drop-shadow(
             0 12px 15px
-            rgba(
-                74,
-                43,
-                32,
-                0.22
-            )
+            rgba(74, 43, 32, 0.20)
         );
 
     animation:
-        foodFloat
-        5s
-        ease-in-out
-        infinite;
+        foodFloat 5s ease-in-out infinite;
 }
 
 
+/* =========================================
+BIRYANI - LEFT
+========================================= */
+
 .food-biryani {
 
-    width: 190px;
+    width: 160px;
 
-    left: -35px;
+    left: -80px;
 
-    top: 18%;
+    top: 5%;
 
     animation-delay: 0s;
 }
 
 
+/* =========================================
+CHICKEN - RIGHT
+========================================= */
+
 .food-chicken {
 
-    width: 190px;
+    width: 160px;
 
-    right: -45px;
+    right: -80px;
 
-    top: 35%;
+    top: 10%;
 
-    animation-delay: 1.2s;
+    animation-delay: 1s;
 }
 
+
+/* =========================================
+DOSA - LEFT
+========================================= */
 
 .food-dosa {
 
-    width: 165px;
+    width: 160px;
 
-    left: -30px;
+    left: -80px;
 
-    top: 67%;
+    bottom: 16%;
 
-    animation-delay: 2.2s;
+    top: auto;
+
+    animation-delay: 2s;
 }
 
+
+/* =========================================
+NAAN - RIGHT
+========================================= */
 
 .food-naan {
 
-    width: 190px;
+    width: 200px;
 
-    right: -55px;
+    right: -80px;
 
-    top: 72%;
+    bottom: 18%;
 
-    animation-delay: 0.8s;
+    top: auto;
+
+    animation-delay: 1.5s;
 }
 
+
+/* =========================================
+FOOD FLOATING ANIMATION
+========================================= */
 
 @keyframes foodFloat {
 
@@ -1378,134 +863,642 @@ section p {
 }
 
 
-/* =====================================================
-   CUSTOMER REVIEW POPUP
-===================================================== */
+/* =========================================
+MOBILE
+========================================= */
 
-.review-popup {
+@media (max-width: 700px) {
 
-    position: fixed;
+    .brand-name span {
 
-    right: 25px;
+        font-size: 45px;
 
-    bottom: 25px;
+    }
 
-    width: 320px;
 
-    padding:
-        25px;
+    .u-bow-logo {
 
-    background:
-        linear-gradient(
-            145deg,
-            #fffaf0,
-            #f5d99b
-        );
+        width: 100px;
 
-    border:
-        2px solid #d79a2b;
+        margin-left: -2px;
 
-    border-radius: 20px;
+    }
 
-    box-shadow:
-        0 15px 45px
-        rgba(
-            0,
-            0,
-            0,
-            0.25
-        );
+
+    .logo-area h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .hero {
+
+        padding: 40px 15px;
+
+    }
+
+
+    .hero p {
+
+        font-size: 18px;
+
+    }
+
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    section {
+
+        padding: 70px 20px;
+
+    }
+
+
+    section h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .menu-popup-content {
+
+        width: 95%;
+
+        padding: 30px 18px;
+
+    }
+
+
+    .menu-popup-content h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .menu-item {
+
+        font-size: 15px;
+
+        padding: 13px;
+
+    }
+
+
+    /* Hide decorative food on small screens */
+
+    .floating-foods {
+
+        display: none;
+
+    }/* =========================================
+   CUSTOMER REVIEWS
+========================================= */
+
+.customer-reviews {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 90px 7%;
 
     text-align: center;
 
-    z-index: 10000;
+    background:
+        radial-gradient(
+            circle at center,
+            #f5d99b 0%,
+            #fff8e9 65%,
+            #f3d49a 100%
+        );
+}
 
-    transform:
-        translateY(150px)
-        scale(0.8);
+.customer-reviews h2 {
+    color: #4a2b20;
 
-    opacity: 0;
+    font-size: 42px;
 
-    pointer-events: none;
+    margin-bottom: 10px;
+}
+
+.review-intro {
+    font-size: 18px;
+
+    margin-bottom: 40px;
+
+    color: #4f2b20;
+}
+
+.review-cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.customer-review {
+    background: #fffaf0;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid #e4c98e;
+
+    box-shadow:
+        0 8px 25px
+        rgba(80, 40, 25, 0.08);
 
     transition:
-        all 0.5s ease;
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
+.customer-review:hover {
+    transform: translateY(-8px);
 
-.review-popup.show {
-
-    transform:
-        translateY(0)
-        scale(1);
-
-    opacity: 1;
-
-    pointer-events: auto;
+    box-shadow:
+        0 14px 30px
+        rgba(80, 40, 25, 0.15);
 }
 
+.customer-review .stars {
+    color: #d79a2b;
 
-.review-popup-close {
+    font-size: 24px;
 
-    position: absolute;
+    letter-spacing: 3px;
 
-    top: 8px;
-
-    right: 10px;
-
-    border: none;
-
-    background: #4a2b20;
-
-    color: white;
-
-    width: 30px;
-
-    height: 30px;
-
-    border-radius: 50%;
-
-    cursor: pointer;
-
-    font-size: 20px;
+    margin-bottom: 12px;
 }
 
+.customer-review h3 {
+    color: #4a2b20;
 
-.popup-stars {
+    font-size: 23px;
+
+    margin: 10px 0 15px;
+}
+
+.customer-review p {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #4f2b20;
+}
+
+.customer-review span {
+    display: block;
+
+    margin-top: 18px;
 
     color: #d79a2b;
 
-    font-size: 25px;
+    font-weight: bold;
+}
+/* =========================================
+   REVIEWS - MOBILE
+========================================= */
 
-    letter-spacing: 3px;
+@media (max-width: 700px) {
+
+    .customer-reviews {
+        padding: 70px 20px;
+    }
+
+    .customer-reviews h2 {
+        font-size: 34px;
+    }
+
+    .review-cards {
+        grid-template-columns: 1fr;
+    }
+
+}/* =========================
+   CUSTOMER REVIEWS - LAST SECTION
+   ========================= */
+
+.reviews {
+    position: relative !important;
+    display: block !important;
+    width: 100%;
+    min-height: 500px;
+    margin-top: 100px;
+    padding: 80px 5%;
+    box-sizing: border-box;
+    clear: both;
+    z-index: 1;
+}
+
+/* Do not allow review images to float over other sections */
+.reviews img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Review heading */
+.reviews h2 {
+    position: relative;
+    z-index: 2;
+}
+
+/* Review cards */
+.review-card {
+    position: relative !important;
+    z-index: 2;
+}
+
+}/* =========================
+   INSTAGRAM SECTION
+   ========================= */
+
+.instagram-section {
+    width: 100%;
+    padding: 80px 20px;
+    text-align: center;
+    background: #f8f0df;
+    box-sizing: border-box;
+    position: relative;
+    clear: both;
+}
+
+.instagram-section h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #542b1f;
+}
+
+.instagram-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #542b1f;
 }
 
 
-.review-popup h3 {
+..instagram-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 30px;
+    background: #542b1f;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+}
 
-    margin:
-        10px 0;
+.instagram-button img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
 
-    color: #4a2b20;
+.instagram-button:hover {
+    transform: scale(1.05);
+    background: #7a4030;
+}
+.instagram-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 30px;
+    background: #542b1f;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+}
 
-    font-size: 22px;
+.instagram-button i {
+    font-size: 28px;
+}/* =====================================================
+   ELEGANT MUST TRY SECTION
+===================================================== */
+
+.must-try {
+    position: relative;
+    width: 100%;
+    padding: 80px 5% 90px;
+    background: #fff8e9;
+    overflow: hidden;
 }
 
 
-.review-popup p {
+/* Section title */
 
-    margin:
-        8px 0;
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
+}
 
-    font-size: 16px;
+.section-title h2 {
+    margin: 0;
+    color: #4b2c20;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 48px;
+    font-weight: 700;
 }
 
 
-.review-popup span {
+/* Gold decorative line */
+
+.title-line {
+    width: 70px;
+    height: 1px;
+    background: #d49a29;
+    margin: 14px auto 0;
+    position: relative;
+}
+
+.title-line span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #fff8e9;
+    padding: 0 8px;
+
+    color: #d49a29;
+    font-size: 10px;
+}
+
+
+/* Five food items */
+
+/* Keep main sections in normal flow and let floating food images be above them */
+.hero,
+section,
+.must-try,
+.food-promise {
+    position: relative;
+    z-index: 0;
+}
+
+.must-try-items {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+/* Individual food */
+
+.must-item {
+    text-align: center;
+    padding: 0 25px;
+
+    border-right: 1px solid #e5d5b7;
+
+    position: relative;
+
+    transition: transform 0.3s ease;
+    z-index: 11;
+    background: rgba(255,248,233,0.95);
+}
+
+.must-item:nth-child(5n) {
+    border-right: none;
+}
+
+
+/* Food image circle */
+
+.food-circle {
+    width: 155px;
+    height: 155px;
+
+    margin: 0 auto 25px;
+
+    padding: 6px;
+
+    border: 1px solid #d49a29;
+    border-radius: 50%;
+
+    position: relative;
+
+    transition: all 0.4s ease;
+}
+
+
+/* Second decorative circle */
+
+.food-circle::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -10px;
+
+    border: 1px solid #e7d4ad;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* Image */
+
+.food-circle img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* Hover */
+
+.must-item:hover {
+    transform: translateY(-8px);
+}
+
+.must-item:hover .food-circle {
+    transform: scale(1.05);
+}
+
+
+/* Dish name */
+
+.must-item h3 {
+    margin: 0;
+
+    color: #4b2c20;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+/* Description */
+
+.must-item p {
+    margin-top: 10px;
+
+    color: #5e4639;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+
+/* Small gold decoration */
+
+.gold-diamond {
+    display: block;
+
+    margin-top: 14px;
+
+    color: #d49a29;
+
+    font-size: 8px;
+}
+
+
+/* =====================================================
+   OUR FOOD PROMISE
+===================================================== */
+
+.food-promise {
+    width: 100%;
+
+    position: relative;
+    z-index: 3;
+
+    padding: 80px 7% 90px;
+
+    background: #fffdf7;
+
+    border-top: 1px solid #ead9b9;
+    border-bottom: 1px solid #ead9b9;
+
+    overflow: hidden;
+}
+
+
+/* Promise title */
+
+.food-promise .section-title {
+    margin-bottom: 35px;
+}
+
+.food-promise .title-line span {
+    background: #fffdf7;
+}
+
+
+/* Promise layout */
+
+.promise-list {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* Promise item */
+
+.promise-item {
+    min-height: 150px;
+
+    padding: 30px 35px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #ead9b9;
+}
+
+
+/* Vertical borders */
+
+.promise-item:not(:nth-child(3n + 1)) {
+    border-left: 1px solid #ead9b9;
+}
+
+
+/* Last item centered */
+
+.promise-center {
+    grid-column: 2;
+}
+
+
+/* Icon */
+
+.promise-icon {
+    flex-shrink: 0;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
 
     color: #a96d13;
 
-    font-weight: bold;
+    font-size: 30px;
+}
+
+
+/* Promise heading */
+
+.promise-item h3 {
+    margin: 0 0 8px;
+
+    color: #4b2c20;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* Promise description */
+
+.promise-item p {
+    margin: 0;
+
+    color: #5e4639;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 17px;
+
+    line-height: 1.5;
 }
 
 
@@ -1515,55 +1508,35 @@ section p {
 
 @media (max-width: 1000px) {
 
+    .must-try {
+        position: relative;
+        z-index: 6;
+    }
+
     .must-try-items {
-
-        grid-template-columns:
-            repeat(3, 1fr);
-
+        grid-template-columns: repeat(3, 1fr);
         row-gap: 50px;
     }
 
-
     .must-item:nth-child(3n) {
-
         border-right: none;
     }
 
-
     .promise-list {
-
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
-
-    .promise-item:not(
-        :nth-child(3n + 1)
-    ) {
-
+    .promise-item:not(:nth-child(3n + 1)) {
         border-left: none;
     }
 
-
     .promise-item:nth-child(even) {
-
-        border-left:
-            1px solid #ead9b9;
+        border-left: 1px solid #ead9b9;
     }
-
 
     .promise-center {
-
         grid-column: auto;
     }
-
-
-    .review-cards {
-
-        grid-template-columns:
-            1fr 1fr;
-    }
-
 }
 
 
@@ -1573,224 +1546,67 @@ section p {
 
 @media (max-width: 700px) {
 
-
-    /* HERO */
-
-    .hero {
-
-        padding:
-            40px 15px;
-    }
-
-
-    .cheranadu-gif {
-
-        width: 95vw;
-
-        max-width: 520px;
-    }
-
-
-    .hero-tagline {
-
-        font-size: 18px;
-    }
-
-
-    .explore-menu-button {
-
-        font-size: 16px;
-
-        padding:
-            13px 25px;
-    }
-
-
-    /* MUST TRY */
-
     .must-try {
-
-        padding:
-            60px 15px 70px;
+        position: relative;
+        z-index: 6;
+        padding: 60px 15px 70px;
     }
-
 
     .section-title h2 {
-
         font-size: 38px;
     }
 
-
     .must-try-items {
-
-        grid-template-columns:
-            repeat(2, 1fr);
-
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 50px;
     }
 
-
     .must-item {
-
-        padding:
-            0 10px;
-
+        padding: 0 10px;
         border-right: none;
     }
 
-
     .food-circle {
-
         width: 125px;
-
         height: 125px;
     }
 
-
     .must-item h3 {
-
         font-size: 20px;
     }
 
-
     .must-item p {
-
         font-size: 15px;
     }
 
 
-    /* PROMISE */
+    /* Food promise */
 
     .food-promise {
-
-        padding:
-            60px 20px 70px;
+        padding: 60px 20px 70px;
     }
 
-
     .promise-list {
-
         grid-template-columns: 1fr;
     }
 
-
     .promise-item {
-
         min-height: auto;
 
-        padding:
-            25px 10px;
+        padding: 25px 10px;
 
         border-left: none !important;
     }
 
-
     .promise-center {
-
         grid-column: auto;
     }
 
-
     .promise-item h3 {
-
         font-size: 21px;
     }
 
-
     .promise-item p {
-
         font-size: 16px;
     }
-
-
-    /* REVIEWS */
-
-    .reviews {
-
-        padding:
-            70px 20px;
-    }
-
-
-    .review-cards {
-
-        grid-template-columns: 1fr;
-    }
-
-
-    /* INSTAGRAM */
-
-    .instagram-section {
-
-        padding:
-            65px 20px;
-    }
-
-
-    .instagram-section h2 {
-
-        font-size: 34px;
-    }
-
-
-    .instagram-section p {
-
-        font-size: 17px;
-    }
-
-
-    /* REVIEW POPUP */
-
-    .review-popup {
-
-        left: 15px;
-
-        right: 15px;
-
-        bottom: 15px;
-
-        width: auto;
-    }
-
-
-    /* FLOATING FOOD */
-
-    .floating-foods {
-
-        display: none;
-    }
-
-
-    /* POPUP */
-
-    .menu-popup-content {
-
-        width: 95%;
-
-        max-height: 85vh;
-
-        padding:
-            30px 18px;
-    }
-
-
-    .menu-popup-content h2 {
-
-        font-size: 28px;
-    }
-
-
-    .menu-item {
-
-        font-size: 15px;
-
-        padding: 13px;
-    }
-
-
-    .menu-item strong {
-
-        font-size: 16px;
-    }
-
 }
