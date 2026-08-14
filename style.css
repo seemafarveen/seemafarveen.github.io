@@ -97,7 +97,7 @@ BRAND NAME
 .brand-name span {
     display: inline-block;
 
-    color: #d79a2b;
+    color: #f3aa3a;
 
     font-family: Arial, Helvetica, sans-serif;
 
@@ -266,7 +266,7 @@ SHOOTING ARROW
 
     height: 110px;
 
-    background: #d79a2b;
+    background: #f3aa3a;
 
     left: 77%;
 
@@ -880,9 +880,7 @@ MOBILE
 
         width: 100px;
 
-        margin-left: -50px;
-
-        margin-bottom: -10px;
+        margin-left: -2px;
 
     }
 
