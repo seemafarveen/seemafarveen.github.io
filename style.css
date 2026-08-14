@@ -97,7 +97,7 @@ BRAND NAME
 .brand-name span {
     display: inline-block;
 
-    color: #f3aa3a;
+    color: #d79a2b;
 
     font-family: Arial, Helvetica, sans-serif;
 
@@ -266,7 +266,7 @@ SHOOTING ARROW
 
     height: 110px;
 
-    background: #f3aa3a;
+    background: #d79a2b;
 
     left: 77%;
 
@@ -878,9 +878,11 @@ MOBILE
 
     .u-bow-logo {
 
-        width: 100px;
+        width: 180px;
 
-        margin-left: -2px;
+        margin-left: -80px;
+
+        margin-bottom: 10px;
 
     }
 
