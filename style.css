@@ -954,6 +954,36 @@ MOBILE
     }
 
 
+    /* =========================================
+    SHOOTING ARROW - MOBILE
+    ========================================= */
+
+    .shoot-arrow {
+
+        left: 50%;
+
+        top: 45%;
+
+        height: 100px;
+
+        width: 4px;
+
+    }
+
+
+    .shoot-arrow::before {
+
+        border-left: 6px solid transparent;
+
+        border-right: 6px solid transparent;
+
+        border-bottom: 14px solid #f3aa3a;
+
+        top: -14px;
+
+    }
+
+
     /* Hide decorative food on small screens */
 
     .floating-foods {
