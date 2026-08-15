@@ -94,6 +94,12 @@ BRAND NAME
 }
 
 
+/* Desktop logo pairing: bow + arrow sit together */
+.logo-area {
+    position: relative;
+}
+
+
 .brand-name span {
     display: inline-block;
 
@@ -268,9 +274,9 @@ SHOOTING ARROW
 
     background: #f3aa3a;
 
-    left: 77%;
+    left: 63%;
 
-    top: 40%;
+    top: 33%;
 
     transform: translateX(-50%);
 
@@ -864,6 +870,65 @@ FOOD FLOATING ANIMATION
 
 
 /* =========================================
+SMALL DESKTOP / MOBILE-LIKE VIEW
+========================================= */
+
+@media (max-width: 900px) and (min-width: 701px) {
+
+    .brand-name span {
+
+        font-size: 52px;
+
+    }
+
+
+    .u-bow-logo {
+
+        width: 170px;
+
+        margin-left: -52px;
+
+        margin-bottom: -12px;
+
+    }
+
+
+    .logo-area h2 {
+
+        font-size: 38px;
+
+    }
+
+
+    .shoot-arrow {
+
+        left: 50%;
+
+        top: 42%;
+
+        height: 100px;
+
+        width: 4px;
+
+    }
+
+
+    .shoot-arrow::before {
+
+        border-left: 6px solid transparent;
+
+        border-right: 6px solid transparent;
+
+        border-bottom: 14px solid #f3aa3a;
+
+        top: -14px;
+
+    }
+
+}
+
+
+/* =========================================
 MOBILE
 ========================================= */
 
@@ -878,11 +943,24 @@ MOBILE
 
     .u-bow-logo {
 
-        width: 200px;
+        width: 170px;
 
-        margin-left: -70px;
+        margin-left: -52px;
 
-        margin-bottom: -13px;
+        margin-bottom: -12px;
+
+    }
+
+
+    .shoot-arrow {
+
+        left: 50%;
+
+        top: 42%;
+
+        height: 100px;
+
+        width: 4px;
 
     }
 
