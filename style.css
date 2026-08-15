@@ -135,6 +135,40 @@ U + BOW LOGO
 
 
 /* =========================================
+DESKTOP U + ARROW POSITION
+========================================= */
+
+@media (min-width: 701px) {
+
+    .logo-area {
+        position: relative;
+    }
+
+
+    .brand-name {
+        position: relative;
+        z-index: 2;
+    }
+
+
+    .u-bow-logo {
+        width: 290px;
+        margin-left: -110px;
+        margin-bottom: -20px;
+    }
+
+
+    .shoot-arrow {
+        left: 74%;
+        top: 38%;
+        height: 120px;
+        width: 5px;
+    }
+
+}
+
+
+/* =========================================
 UNAVAGAM
 ========================================= */
 
@@ -878,11 +912,11 @@ MOBILE
 
     .u-bow-logo {
 
-        width: 200px;
+        width: 140px;
 
-        margin-left: -70px;
+        margin-left: -45px;
 
-        margin-bottom: -13px;
+        margin-bottom: -15px;
 
     }
 
